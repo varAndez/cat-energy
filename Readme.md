@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Андрей Иванов](https://up.htmlacademy.ru/adaptive/21/user/1487281).
-* Наставник: `Неизвестно`.
+- Студент: [Андрей Иванов](https://up.htmlacademy.ru/adaptive/21/user/1487281).
+- Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 
