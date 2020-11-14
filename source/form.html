@@ -1,12 +1,175 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo">
+      <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип cat-energy!">
+    </a>
+    <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+    <nav class="page-header_nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html"> Главная </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="catalog.html"> Каталог продукции </a>
+        </li>
+        <li class="main-nav__item active">
+          <a> Подбор программы </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form form">
+
+      <h1 class="form__title">Подбор программы</h1>
+      <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+
+
+
+        <!-- Указываем имя, вес и возраст кота-->
+        <fieldset class="form__fieldset">
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__name" for="cat-name">Имя:*</label>
+              <input id="cat-name" type="text" name="cat-name" placeholder="Барсик" required />
+            </li>
+            <li class="form__item">
+              <label class="form__weight" for="cat-weight">Вес (кг):*</label>
+              <input id="cat-weight" type="text" name="cat-weight" placeholder="7" />
+            </li>
+            <li class="form__item">
+              <label class="form__age" for="cat-age">Возвраст (лет):</label>
+              <input id="cat-age" type="text" name="cat-age" placeholder="7" />
+            </li>
+          </ul>
+        </fieldset>
+
+
+
+
+
+
+
+        <!-- Выбираем программу: похудение или набор массы, так же можем помочь советом.-->
+        <fieldset class="form__fieldset">
+          <ul class="form__list">
+            <li class="form__item">
+              <input class="visually-hidden" type="radio" name="program" value="slimming" id="form-slimming" checked />
+              <label class="form__text" for="form-slimming">Похудение</label>
+            </li>
+
+            <li class="form__item">
+              <input class="visually-hidden" type="radio" name="program" value="weight-gain" id="form-weight-gain" />
+              <label class="form__text" for="form-weight-gain">Набор массы</label>
+            </li>
+
+            <li class="form__item">
+              <input class="visually-hidden" type="radio" name="program" value="advice" id="form-advice" />
+              <label class="form__text" for="form-advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+
+
+
+
+
+        <!-- Указываем контактные данные-->
+        <fieldset class="form__fieldset">
+          <legend class="form__caption">Контактные данные (владельца кота)</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <label for="email">Email:*</label>
+            </li>
+            <li class="form__item">
+              <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              <label for="tel">Телефон:*</label>
+            </li>
+          </ul>
+        </fieldset>
+
+
+
+
+
+
+        <!-- Оставляем комментарий-->
+        <fieldset class="form__fieldset">
+          <legend class="form__caption">Комментарий</legend>
+          <textarea class="form__response" name="cat-desc" placeholder="Расскажите обо всех повадках кота"
+            aria-label="Расскажите о вашем коте."></textarea>
+        </fieldset>
+
+
+
+
+        <!-- Дополнительные товары-->
+        <fieldset class="form__fieldset">
+          <legend class="form__caption">Дополнительно</legend>
+          <ul class="form__list">
+
+            <li class="form__item">
+              <input type="checkbox" name="dop-info" value="sweetener" id="food-sweetener">
+              <label for="food-sweetener">Сахарозаменитель</label>
+            </li>
+
+            <li class="form__item">
+              <input type="checkbox" name="dop-info" value="water" id="food-water">
+              <label for="food-water">Питьевая вода</label>
+            </li>
+
+            <li class="form__item">
+              <input type="checkbox" name="dop-info" value="milk" id="food-milk">
+              <label for="food-milk">Молоко</label>
+            </li>
+
+            <li class="form__item">
+              <input type="checkbox" name="dop-info" value="vitamins" id="food-vitamins">
+              <label for="food-vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form__button" type="submit">Отправить заявку</button>
+        <p class="form__required-field">* — Обязательные поля</p>
+      </form>
+    </section>
+  </main>
+
+
+
+
+  <footer class="page-footer">
+    <a href="index.html" class="page-footer__logo">
+      <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Cat-energy!">
+    </a>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      </li>
+    </ul>
+    <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <p class="copyright__text">HTML Academy</p>
+      <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип HTML Academy">
+    </a>
+  </footer>
+</body>
+
 </html>
