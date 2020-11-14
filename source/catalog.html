@@ -12,15 +12,14 @@
     <a href="index.html" class="page-header__logo">
       <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип cat-energy!">
     </a>
-    <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть/закрыть
-        меню</span></button>
+    <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
     <nav class="page-header_nav main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a href="index.html"> Главная </a>
         </li>
         <li class="main-nav__item active">
-          <a href="catalog.html"> Каталог продукции </a>
+          <a> Каталог продукции </a>
         </li>
         <li class="main-nav__item">
           <a href="form.html"> Подбор программы </a>
@@ -32,15 +31,18 @@
   <main>
     <section class="page-catalog catalog">
       <h1 class="catalog__title">Каталог</h1>
+
       <ul class="catalog__list">
 
         <li class="catalog__item">
-          <a href="form.html">
+          <a href="#">
             <img src="https://via.placeholder.com/150x150" width="150" height="150"
               alt="Функциональное питание для котов со вкусом курицы, 500 грамм."></a>
 
           <div class="catalog__info info">
-            <h2 class="info__title">Cat Energy PRO 500 г</h2>
+            <a class="info__link" href="#">
+              <h3 class="info__title">Cat Energy PRO 500 г</h3>
+            </a>
             <dl class="info__text">
               <dt>Масса</dt>
               <dd>500 г</dd>
@@ -54,13 +56,15 @@
         </li>
 
         <li class="catalog__item">
-          <a href="form.html">
+          <a href="#">
             <img src="https://via.placeholder.com/150x150" width="150" height="150"
               alt="Функциональное питание для котов со вкусом курицы, 1000 грамм."></a>
 
 
           <div class="catalog__info info">
-            <h2 class="info__title">Cat Energy PRO 1000 г</h2>
+            <a class="info__link" href="#">
+              <h3 class="info__title">Cat Energy PRO 1000 г</h3>
+            </a>
             <dl class="info__text">
               <dt>Масса</dt>
               <dd>1000 г</dd>
@@ -74,12 +78,14 @@
         </li>
 
         <li class="catalog__item">
-          <a href="form.html">
+          <a href="#">
             <img src="https://via.placeholder.com/150x150" width="150" height="150"
               alt="Функциональное питание для котов со вкусом рыбы, 500 грамм."></a>
 
           <div class="catalog__info info">
-            <h2 class="info__title">Cat Energy PRO 500 г</h2>
+            <a class="info__link" href="#">
+              <h3 class="info__title">Cat Energy PRO 500 г</h3>
+            </a>
             <dl class="info__text">
               <dt>Масса</dt>
               <dd>700 г</dd>
@@ -93,12 +99,14 @@
         </li>
 
         <li class="catalog__item">
-          <a href="form.html">
+          <a href="#">
             <img src="https://via.placeholder.com/150x150" width="150" height="150"
               alt="Функциональное питание для котов со вкусом рыбы, 1000 грамм."></a>
 
           <div class="catalog__info info">
-            <h2 class="info__title">Cat Energy PRO 1000 г</h2>
+            <a class="info__link" href="#">
+              <h3 class="info__title">Cat Energy PRO 1000 г</h3>
+            </a>
             <dl class="info__text">
               <dt>Масса</dt>
               <dd>1000 г</dd>
@@ -117,7 +125,9 @@
               alt="Функциональное питание для котов со вкусом гречки, 500 грамм."></a>
 
           <div class="catalog__info info">
-            <h2 class="info__title">Cat Energy SLIM 500 г</h2>
+            <a class="info__link" href="#">
+              <h3 class="info__title">Cat Energy SLIM 500 г</h3>
+            </a>
             <dl class="info__text">
               <dt>Масса</dt>
               <dd>500 г</dd>
@@ -136,7 +146,9 @@
               alt="Функциональное питание для котов со вкусом гречки, 1000 грамм."></a>
 
           <div class="catalog__info info">
-            <h2 class="info__title">Cat Energy SLIM 1000 г</h2>
+            <a class="info__link" href="#">
+              <h3 class="info__title">Cat Energy SLIM 1000 г</h3>
+            </a>
             <dl class="info__text">
               <dt>Масса</dt>
               <dd>1000 г</dd>
@@ -155,7 +167,9 @@
               alt="Функциональное питание для котов со вкусом риса, 500 грамм."></a>
 
           <div class="catalog__info info">
-            <h2 class="info__title">Cat Energy SLIM 500 г</h2>
+            <a class="info__link" href="#">
+              <h3 class="info__title">Cat Energy SLIM 500 г</h3>
+            </a>
             <dl class="info__text">
               <dt>Масса</dt>
               <dd>500 г</dd>
@@ -167,16 +181,17 @@
           </div>
           <a href="#" class="button">Заказать</a>
         </li>
-
-        <li class="catalog__item">
-          <h2 class="catalog__title">Показать еще 100500 товаров</h2>
-          <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-        </li>
       </ul>
-      <a href="#" class="button button__show-all">Показать все</a>
+
+
+      <div class="show-more">
+        <span class="show-more__title">Показать еще 100500 товаров</span>
+        <span class="show-more__text">На самом деле вкусов гораздо больше!</span>
+        <a href="#" class="button button__show-all">Показать все</a>
+      </div>
     </section>
 
-    <section class="additional-products products">
+    <section class="products">
       <h2 class="products__title">Дополнительные товары</h2>
       <ul class="products__list">
 
@@ -187,7 +202,7 @@
               <dt>1 упаковка (100 г)</dt>
               <dd>200 Р.</dd>
             </dl>
-            <a href="button">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </div>
         </li>
 
@@ -198,7 +213,7 @@
               <dt>5 литров</dt>
               <dd>500 Р.</dd>
             </dl>
-            <a href="button">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </div>
         </li>
 
@@ -209,7 +224,7 @@
               <dt>1 литр</dt>
               <dd>100 Р.</dd>
             </dl>
-            <a href="button">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </div>
         </li>
 
@@ -220,23 +235,21 @@
               <dt>1 упаковка (30 г)</dt>
               <dd>300 Р.</dd>
             </dl>
-            <a href="button">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </div>
         </li>
       </ul>
     </section>
 
-    <section class="present">
-      <h2 class="visually-hidden">Подарки при покупке</h2>
-      <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Коробка с подарком">
+    <div class="products__present present">
       <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
-    </section>
+    </div>
 
 
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo">
+    <a href="index.html" class="page-footer__logo">
       <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Cat-energy!">
     </a>
     <ul class="page-footer__social social">
