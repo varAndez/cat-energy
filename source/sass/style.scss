@@ -1,1 +1,17 @@
 // Начните писать стили здесь
+@import "variables.scss";
+@import "normalize.scss";
+@import "body.scss";
+@import "global/discharge.scss";
+
+@import "blocks/maninnavigation.scss";
+@import "blocks/headblock.scss";
+@import "blocks/programs.scss";
+@import "blocks/instructions.scss";
+@import "blocks/illustration.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+
+
+
+
