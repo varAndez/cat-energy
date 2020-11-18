@@ -1,0 +1,24 @@
+.programs {
+}
+.programs__item {
+background-color: $color-basic-grey;
+
+}
+.programs__title {
+font-family: Oswald;
+font-size: 24px;
+line-height: 37px;
+text-transform: uppercase;
+color: $color-black;
+}
+.programs__text {
+font-family: Arial;
+color: $color-special-grey-3;
+
+}
+.programs__link {
+font-family: Oswald;
+line-height: 16px;
+text-transform: uppercase;
+color: $color-black;
+}

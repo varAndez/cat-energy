@@ -1,0 +1,51 @@
+.illustration {
+  background-color: $color-background;
+}
+.illustration__title {
+font-family: Oswald;
+font-size: 36px;
+line-height: 40px;
+color: $color-black;
+}
+.illustration__text {
+font-family: Arial;
+color: $color-special-grey-3;
+}
+.illustration__result {
+}
+.result {
+}
+.result__list {
+}
+.result__item {
+}
+.result__total {
+font-family: Oswald;
+line-height: 24px;
+color: $color-black;
+}
+.result__text {
+font-family: Arial;
+font-size: 12px;
+line-height: 12px;
+color: $color-special-grey-3;
+}
+.illustration__total {
+font-family: Oswald;
+line-height: 20px;
+text-transform: uppercase;
+color: $color-black;
+}
+.compare {
+}
+.compare__image {
+}
+.compare__range {
+}
+.compare__button {
+font-family: Oswald;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: $color-black;
+}

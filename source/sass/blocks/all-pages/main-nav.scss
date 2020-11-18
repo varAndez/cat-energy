@@ -1,7 +1,7 @@
 
 
 .page-header_nav {
-  background-color: blue;
+
 }
 .main-nav {
 
@@ -9,14 +9,15 @@
 }
 .main-nav__list {
   font-family: Oswald;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $basic-black;
   list-style: none;
   margin: 0;
+  padding: 0;
+  color: $color-black;
+
 }
 .main-nav__item {
 }

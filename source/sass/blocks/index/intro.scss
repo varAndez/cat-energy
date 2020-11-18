@@ -1,0 +1,25 @@
+.head-block {
+}
+.head-block__wrapper {
+}
+.head-block__title {
+font-family: Oswald;
+font-size: 36px;
+line-height: 36px;
+text-align: center;
+}
+.head-block__text {
+font-style: inherit;
+line-height: 14px;
+text-transform: uppercase;
+}
+.button {
+font-family: Oswald;
+text-transform: uppercase;
+color: $color-white;
+background-color: $color-green;
+
+padding: 7px 44px;
+}
+.head-block__selection {
+}

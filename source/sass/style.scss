@@ -1,16 +1,21 @@
 // Начните писать стили здесь
 @import "variables.scss";
 @import "normalize.scss";
-@import "body.scss";
+@import "global/body.scss";
 @import "global/discharge.scss";
-
-@import "blocks/maninnavigation.scss";
-@import "blocks/headblock.scss";
-@import "blocks/programs.scss";
-@import "blocks/instructions.scss";
-@import "blocks/illustration.scss";
-@import "blocks/contacts.scss";
-@import "blocks/footer.scss";
+@import "blocks/all-pages/main-nav.scss";
+@import "blocks/all-pages/contacts.scss";
+@import "blocks/all-pages/footer.scss";
+@import "blocks/index/intro.scss";
+@import "blocks/index/programs.scss";
+@import "blocks/index/instructions.scss";
+@import "blocks/index/illustration.scss";
+@import "blocks/catalog/catalog.scss";
+@import "blocks/catalog/product.scss";
+@import "blocks/catalog/present.scss";
+@import "blocks/form/intro-form.scss";
+@import "blocks/form/form.scss";
+@import "blocks/form/additional-info";
 
 
 
