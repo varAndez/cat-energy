@@ -1,6 +1,16 @@
-.form {
-}
 .form__title {
+  font-family: $font-family--second;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-black;
 }
+
 .form__subtitle {
+  font-family: $font-family--second;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-black;
 }

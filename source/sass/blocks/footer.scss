@@ -3,12 +3,15 @@
 
   background-color: $color-white-smoke;
 }
+
 .page-footer__logo {
   padding: 0 96px;
 }
+
 .page-footer__social {
   @include reset-list;
 }
+
 .social {
   display: flex;
   justify-content: space-between;
@@ -23,5 +26,5 @@
 
 .copyright__text {
   line-height: 18px;
-  font-family: Arial;
+  font-family: $font-family--main;
 }

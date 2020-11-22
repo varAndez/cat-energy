@@ -1,6 +1,7 @@
 .illustration {
   padding: 0 20px;
 }
+
 .illustration__title {
   font-weight: 400;
   font-size: 36px;
@@ -8,6 +9,7 @@
   font-family: $font-family--second;
   color: $color-black;
 }
+
 .illustration__text {
   font-family: $font-family--main;
   color: $color-charcoal;
@@ -30,11 +32,13 @@
   font-family: $font-family--second;
   color: $color-black;
 }
+
 .result__text {
   font-size: 12px;
   line-height: 12px;
   font-family: $font-family--main;
 }
+
 .illustration__total {
   font-weight: 400;
   font-size: 14px;
@@ -42,6 +46,7 @@
   font-family: $font-family--second;
   text-transform: uppercase;
 }
+
 .compare__button {
   padding: 0;
 

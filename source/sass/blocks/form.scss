@@ -1,24 +1,26 @@
-.form__fieldset {
-}
-.form__list {
-}
-.form__item {
-}
 .form__name {
+  font-family: $font-family--second;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-charcoal;
 }
+
 .form__weight {
+  font-family: $font-family--second;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-charcoal;
 }
+
 .form__age {
-}
-.visually-hidden {
-}
-.form__text {
-}
-.form__caption {
-}
-.form__response {
-}
-.form__button {
-}
-.form__required-field {
+  font-family: $font-family--second;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-charcoal;
 }
