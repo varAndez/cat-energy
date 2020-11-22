@@ -1,16 +1,24 @@
-.form__title {
+.example {
+  padding: 0 20px;
+}
+
+.example__title {
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 40px;
   font-family: $font-family--second;
   color: $color-black;
 }
 
-.form__subtitle {
+.example__text {
+  font-family: $font-family--main;
+  color: $color-charcoal;
+}
+
+.example__total {
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   font-family: $font-family--second;
-  color: $color-black;
   text-transform: uppercase;
 }

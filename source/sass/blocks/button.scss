@@ -1,13 +1,15 @@
 .button {
-  padding: 7px 44px;
   margin: 0 auto;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: $font-family--second;
+  padding: 7px 44px;
+
   font-size: 14px;
   line-height: 18px;
-  background-color: $color-apple;
+  font-family: $font-family--second;
+  text-align: center;
   color: $color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-apple;
+  border: none;
 }

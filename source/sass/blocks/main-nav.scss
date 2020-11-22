@@ -1,12 +1,12 @@
 .main-nav__list {
-  @include reset-list;
-
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   font-family: $font-family--second;
   text-align: center;
   text-transform: uppercase;
+
+  @include list-reset;
 }
 
 .main-nav__item {
