@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+// Variables
+@import "variables.scss";
+// Vendor
+@import "vendor/normalize.scss";
+@import "vendor/mixins.scss";
+// Global
+@import "global/reboot.scss";
+@import "global/container.scss";
+@import "global/utils.scss";
+@import "global/fonts.scss";
+// Blocks
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/intro.scss";
+@import "blocks/programs.scss";
+@import "blocks/instructions.scss";
+@import "blocks/illustration.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product.scss";
+@import "blocks/present.scss";
+@import "blocks/intro-form.scss";
+@import "blocks/form.scss";
+@import "blocks/additional-info";
+@import "blocks/button";

@@ -1,0 +1,16 @@
+.main-nav__list {
+  @include reset-list;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $font-family--second;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-nav__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  border-top: 1px solid $color-whisper-border;
+}

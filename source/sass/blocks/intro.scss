@@ -1,0 +1,36 @@
+.head-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  background-image: url("../img/background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.head-block__wrapper {
+  min-height: 302px;
+
+  background-color: $color-apple-transparent;
+}
+
+.head-block__title {
+  padding-top: 27px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $font-family--second;
+  text-align: center;
+  color: $color-white;
+}
+
+.head-block__text {
+  margin-top: 25px;
+
+  line-height: 14px;
+  font-family: $font-family--second;
+  text-align: center;
+  color: $color-white;
+  text-transform: uppercase;
+}

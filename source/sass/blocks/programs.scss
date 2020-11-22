@@ -1,0 +1,47 @@
+.programs__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 30px 33px 18px 20px;
+
+  text-align: center;
+
+  background-color: $color-white-smoke;
+}
+.programs__title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: $font-family--second;
+  color: $color-black;
+  text-transform: uppercase;
+}
+.programs__text {
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 23px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-family--main;
+  color: $color-charcoal;
+
+  border-bottom: 1px solid $color-gainsboro;
+}
+.programs__link {
+  display: flex;
+  align-self: flex-start;
+  padding-top: 15px;
+
+  line-height: 16px;
+  font-family: Oswald;
+  color: $color-black;
+  text-transform: uppercase;
+}

@@ -1,0 +1,24 @@
+// Сброс
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+// Border
+
+@mixin red {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
+@mixin blue {
+  outline: 5px solid rgbargb(0, 0, 255 0.8);
+  outline-offset: -5px;
+}
+
+@mixin green {
+  outline: 5px solid rgba(60, 179, 113 0.8);
+  outline-offset: -5px;
+}
