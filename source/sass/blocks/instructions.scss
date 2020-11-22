@@ -1,16 +1,17 @@
 .instructions {
+  padding: 0 20px;
 }
 .instructions__title {
-font-family: Oswald;
-font-size: 36px;
-line-height: 40px;
-color: $color-black;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: $font-family--second;
 }
 .instructions__list {
+  @include reset-list;
 }
-.instructions__item {
-}
+
+
 .instructions__text {
-font-family: Arial;
-color: $color-special-grey-3;
+  font-family: $font-family--main;
 }

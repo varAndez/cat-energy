@@ -1,15 +1,16 @@
-.contacts {
-}
+
 .contacts__title {
-font-family: Oswald;
-font-size: 16px;
-text-transform: uppercase;
-color: $color-tittle-contacts;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $font-family--second;
+  color: $color-black-second;
+  text-transform: uppercase;
 }
 .contacts__text {
-font-family: Arial;
-line-height: 20px;
-color: $color-special-grey-3;
-}
-.contacts__map {
+  font-style: normal ;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-family--main;
+  color: $color-charcoal;
 }

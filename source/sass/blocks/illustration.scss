@@ -1,51 +1,56 @@
 .illustration {
-  background-color: $color-background;
+  padding: 0 20px;
 }
 .illustration__title {
-font-family: Oswald;
-font-size: 36px;
-line-height: 40px;
-color: $color-black;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: $font-family--second;
+  color: $color-black;
 }
 .illustration__text {
-font-family: Arial;
-color: $color-special-grey-3;
+  font-family: $font-family--main;
+  color: $color-charcoal;
 }
-.illustration__result {
-}
-.result {
-}
+
+
 .result__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
-.result__item {
-}
+
 .result__total {
-font-family: Oswald;
-line-height: 24px;
-color: $color-black;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $font-family--second;
+  color: $color-black;
 }
 .result__text {
-font-family: Arial;
-font-size: 12px;
-line-height: 12px;
-color: $color-special-grey-3;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $font-family--main;
 }
 .illustration__total {
-font-family: Oswald;
-line-height: 20px;
-text-transform: uppercase;
-color: $color-black;
-}
-.compare {
-}
-.compare__image {
-}
-.compare__range {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-family--second;
+  text-transform: uppercase;
 }
 .compare__button {
-font-family: Oswald;
-font-size: 16px;
-line-height: 20px;
-text-transform: uppercase;
-color: $color-black;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-family--second;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
