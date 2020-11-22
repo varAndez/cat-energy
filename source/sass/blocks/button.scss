@@ -12,4 +12,15 @@
 
   background-color: $color-apple;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-limeade;
+  }
+
+  &:active {
+    color: $color-white-opacity;
+
+    background-color: $color-limeade;
+  }
 }

@@ -5,16 +5,24 @@
   @include list-reset;
 }
 
-.result__total {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  font-family: $font-family--second;
-  color: $color-black;
-}
 
 .result__text {
   font-size: 12px;
   line-height: 12px;
   font-family: $font-family--main;
+}
+
+.result__total {
+  display: flex;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-family--second;
+  color: $color-black;
+  text-transform: uppercase;
+
+  dd {
+    margin-left: 3px;
+  }
 }

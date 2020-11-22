@@ -17,3 +17,27 @@
 .instructions__text {
   font-family: $font-family--main;
 }
+
+.instructions__item::before {
+  content: "";
+  position: absolute;
+
+  width: 60px;
+  height: 60px;
+}
+
+.instructions__item--icon-1::before {
+  background-image: url("../img/green-back-1.svg");
+}
+
+.instructions__item--icon-2::before {
+  background-image: url("../img/green-back-2.svg");
+}
+
+.instructions__item--icon-3::before {
+  background-image: url("../img/green-back-3.svg");
+}
+
+.instructions__item--icon-4::before {
+  background-image: url("../img/green-back-4.svg");
+}

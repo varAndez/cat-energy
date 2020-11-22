@@ -9,7 +9,7 @@
 }
 
 .head-block__wrapper {
-  min-height: 302px;
+  min-height: 302px; // Навреное лишнее. При изменение значения вываливается фотография и блок себя ведёт не правильно.
 
   background-color: $color-apple-transparent;
 }
