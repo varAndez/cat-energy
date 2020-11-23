@@ -1,0 +1,21 @@
+
+.extra__caption {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: $font-family--second;
+  color: $color-black;
+}
+
+.extra__list {
+  @include list-reset;
+}
+
+.extra__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $font-family--second;
+  color: $color-black;
+  text-transform: uppercase;
+}

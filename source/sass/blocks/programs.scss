@@ -1,19 +1,22 @@
+.programs {
+  margin-top: 22px;
+}
+
 .programs__item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 30px 33px 18px 20px;
 
-  text-align: center;
-
   background-color: $color-white-smoke;
 }
+
 .programs__title {
   margin: 0;
+  padding: 0;
+  padding-left: 91px - 20px;
 
   font-weight: 400;
   font-size: 24px;
@@ -21,7 +24,33 @@
   font-family: $font-family--second;
   color: $color-black;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
 }
+
+.programs__title--icon-1::before {
+  left: 19px;
+
+  width: 50px;
+  height: 53px;
+
+  background-image: url("../img/programs-1.svg");
+  transform: translateX(+50%);
+}
+
+.programs__title--icon-2::before {
+  left: 4px; // WARNING: магическое число
+
+  width: 67px;
+  height: 50px;
+
+  background-image: url("../img/programs-2.svg");
+  transform: translateX(+50%);
+}
+
 .programs__text {
   margin: 0;
   padding-top: 29px;
@@ -35,13 +64,14 @@
 
   border-bottom: 1px solid $color-gainsboro;
 }
+
 .programs__link {
   display: flex;
   align-self: flex-start;
   padding-top: 15px;
 
   line-height: 16px;
-  font-family: Oswald;
+  font-family: $font-family--second;
   color: $color-black;
   text-transform: uppercase;
 }

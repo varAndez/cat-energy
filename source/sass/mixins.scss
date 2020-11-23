@@ -1,12 +1,12 @@
 // Сброс
 
-@mixin reset-list {
+@mixin list-reset {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
-// Border
+// Border для подсветки, удалить в конце проекта
 
 @mixin red {
   outline: 5px solid rgba(255, 0, 0, 0.8);

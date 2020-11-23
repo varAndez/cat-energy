@@ -1,0 +1,23 @@
+.page-footer__social {
+  @include list-reset;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__item {
+  display: flex;
+  margin-right: 35px;
+  padding: 20px 0;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

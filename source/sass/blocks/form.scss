@@ -1,24 +1,33 @@
+.form__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $font-family--second;
+  color: $color-black;
+}
+
+.form__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-family--second;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
 .form__fieldset {
+  border: 0;
 }
-.form__list {
-}
-.form__item {
-}
-.form__name {
-}
-.form__weight {
-}
-.form__age {
-}
-.visually-hidden {
-}
-.form__text {
-}
-.form__caption {
-}
-.form__response {
-}
+
 .form__button {
+  width: 100%;
 }
+
 .form__required-field {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $font-family--main;
+  text-align: center;
+  color: $color-black;
 }

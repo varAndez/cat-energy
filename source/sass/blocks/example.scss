@@ -1,0 +1,26 @@
+.example {
+  padding: 0 20px;
+
+  background-color: $color-whisper;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: $font-family--second;
+  color: $color-black;
+}
+
+.example__text {
+  font-family: $font-family--main;
+  color: $color-charcoal;
+}
+
+.example__total {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-family--second;
+  text-transform: uppercase;
+}
