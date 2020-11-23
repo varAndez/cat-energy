@@ -1,4 +1,13 @@
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__title {
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 37px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -7,6 +16,10 @@
 }
 
 .form__subtitle {
+  margin: 0;
+  margin-top: 37px;
+  margin-bottom: 39px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -15,15 +28,66 @@
   text-transform: uppercase;
 }
 
-.form__fieldset {
-  border: 0;
+.form__list {
+  display: flex;
+  flex-direction: column;
+
+  @include list-reset;
 }
 
-.form__button {
-  width: 100%;
+.form__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 13px;
+}
+
+.form__caption {
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 32px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: $font-family--second;
+  color: $color-black;
+}
+
+.form__response {
+  min-height: 150px;
+}
+
+.form__input,
+.form__response {
+  border: 1px solid $color-very-light-grey;
+}
+
+.form__label,
+.form__input,
+.form__response {
+  display: flex;
+  flex-grow: 1;
+  padding: 12px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $font-family--second;
+  color: $color-charcoal;
+  text-transform: uppercase;
+}
+
+.form__label--black {
+  color: $color-black;
+}
+
+.form__label--dark-grey {
+  color: $color-nero;
 }
 
 .form__required-field {
+  margin: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
