@@ -1,0 +1,31 @@
+.info {
+  grid-area: info;
+}
+
+
+.info__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-family--second;
+  color: $color-nero;
+  text-transform: uppercase;
+}
+
+.info__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-family--main;
+  color: $color-charcoal;
+
+  dd {
+    margin: 0;
+  }
+}
+
+.info__button {
+  width: 100%;
+
+  grid-area: button;
+}

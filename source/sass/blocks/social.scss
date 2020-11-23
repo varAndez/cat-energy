@@ -4,6 +4,20 @@
 
 .social {
   display: flex;
-  justify-content: space-between;
-  padding: 52px 97px 0 93px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__item {
+  display: flex;
+  margin-right: 35px;
+  padding: 20px 0;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

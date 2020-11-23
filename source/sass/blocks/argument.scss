@@ -1,10 +1,14 @@
-.form__weight,
-.form__name,
-.form__age {
+.argument__weight,
+.argument__name,
+.argument__age {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   font-family: $font-family--second;
   color: $color-charcoal;
   text-transform: uppercase;
+}
+
+.argument__list {
+  @include list-reset;
 }

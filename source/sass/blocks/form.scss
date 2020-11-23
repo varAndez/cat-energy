@@ -14,3 +14,20 @@
   color: $color-black;
   text-transform: uppercase;
 }
+
+.form__fieldset {
+  border: 0;
+}
+
+.form__button {
+  width: 100%;
+}
+
+.form__required-field {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $font-family--main;
+  text-align: center;
+  color: $color-black;
+}

@@ -1,0 +1,26 @@
+.catalog__title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $font-family--second;
+  color: $color-black;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__item {
+  display: grid;
+
+  grid-template-areas: "image info"
+    "button button";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+
+.catalog__image {
+  grid-area: image;
+}
