@@ -15,12 +15,43 @@
 .catalog__item {
   display: grid;
 
-  grid-template-areas: "image info"
-    "button button";
+  grid-template: "a c"
+    "b b";
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
 }
 
-.catalog__image {
-  grid-area: image;
+.catalog__image-link {
+  grid-area: a;
+}
+
+.catalog__link-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-family--second;
+  color: $color-nero;
+  text-transform: uppercase;
+}
+
+.catalog__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-family--main;
+  color: $color-charcoal;
+
+  grid-area: c;
+}
+
+.catalog__text-price,
+.catalog__text-taste,
+.catalog__text-weight {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__button {
+  grid-area: b;
+  width: 100%;
 }
