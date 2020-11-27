@@ -67,18 +67,21 @@
         <div class="form__fieldset">
           <ul class="form__list">
             <li class="form__item">
-              <input class="visually-hidden" type="radio" name="program" value="slimming" id="form-slimming" checked />
-              <label class="form__label form__label--dark-grey" for="form-slimming">Похудение</label>
+              <input class="form__input-radio visually-hidden" type="radio" name="program" value="slimming"
+                id="form-slimming" checked />
+              <label class="form__label form__label--radio" for="form-slimming">Похудение</label>
             </li>
 
             <li class="form__item">
-              <input class="visually-hidden" type="radio" name="program" value="weight-gain" id="form-weight-gain" />
-              <label class="form__label form__label--dark-grey" for="form-weight-gain">Набор массы</label>
+              <input class="form__input-radio visually-hidden" type="radio" name="program" value="weight-gain"
+                id="form-weight-gain" />
+              <label class="form__label form__label--radio" for="form-weight-gain">Набор массы</label>
             </li>
 
             <li class="form__item">
-              <input class="visually-hidden" type="radio" name="program" value="advice" id="form-advice" />
-              <label class="form__label form__label--dark-grey" for="form-advice">Не знаю (Нужен ваш
+              <input class="form__input-radio visually-hidden" type="radio" name="program" value="advice"
+                id="form-advice" />
+              <label class="form__label form__label--radio" for="form-advice">Не знаю (Нужен ваш
                 совет)</label>
             </li>
           </ul>
@@ -114,28 +117,38 @@
 
             <li class="form__item">
               <input type="checkbox" name="additional-info" value="sweetener" id="food-sweetener">
-              <label class="form__label form__label--black" for="food-sweetener">Сахарозаменитель</label>
+              <label class="form__label form__label--checkbox" for="food-sweetener">Сахарозаменитель</label>
             </li>
 
             <li class="form__item">
               <input type="checkbox" name="additional-info" value="water" id="food-water">
-              <label class="form__label form__label--black" for="food-water">Питьевая вода</label>
+              <label class="form__label form__label--checkbox" for="food-water">Питьевая вода</label>
             </li>
 
             <li class="form__item">
               <input type="checkbox" name="additional-info" value="milk" id="food-milk">
-              <label class="form__label form__label--black" for="food-milk">Молоко</label>
+              <label class="form__label form__label--checkbox" for="food-milk">Молоко</label>
             </li>
 
             <li class="form__item">
               <input type="checkbox" name="additional-info" value="vitamins" id="food-vitamins">
-              <label class="form__label form__label--black" for="food-vitamins">Витамины</label>
+              <label class="form__label form__label--checkbox" for="food-vitamins">Витамины</label>
             </li>
           </ul>
         </div>
         <button class="button" type="submit">Отправить заявку</button>
         <p class="form__required-field">* — Обязательные поля</p>
       </form>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__wrapper contacts__wrapper--grey">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="contacts__text">ул. Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</address>
+      </div>
+      <div class="contacts__map">
+        <img src="img/location.jpg" width="320" height="362" alt="Карта с местоположением магазина">
+      </div>
     </section>
   </main>
 

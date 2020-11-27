@@ -67,7 +67,8 @@
 .form__response {
   display: flex;
   flex-grow: 1;
-  padding: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   font-weight: 400;
   font-size: 16px;
@@ -77,12 +78,57 @@
   text-transform: uppercase;
 }
 
-.form__label--black {
-  color: $color-black;
+.form__label {
+  position: relative;
 }
 
-.form__label--dark-grey {
-  color: $color-nero;
+.form__label--radio {
+  padding-left: 45px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid $color-very-light-grey;
+    border-radius: 50%;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 1px solid $color-silver;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+
+.form__input-radio:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 9px;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: $color-apple;
+    border-radius: 50%;
+  }
 }
 
 .form__required-field {
