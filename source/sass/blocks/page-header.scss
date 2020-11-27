@@ -1,35 +1,10 @@
 .page-header {
   padding-top: 12px;
-  padding-bottom: 16px;
 }
 
-.page-header__toggle {
-  position: absolute;
-  top: 23px;
-  right: 23px;
-
-  padding: 0;
-
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.page-header__toggle::before,
-.page-header__toggle::after {
-  content: "";
-  position: absolute;
-
-  width: 1.5px;
-  height: 24.76px;
-
-  background-color: $color-black;
-}
-
-.page-header__toggle::before {
-  transform: rotate(45deg);
-}
-
-.page-header__toggle::after {
-  transform: rotate(-45deg);
+.page-header__wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 18px;
+  padding-right: 21px;
 }
