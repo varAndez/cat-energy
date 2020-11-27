@@ -2,6 +2,12 @@
   display: flex;
   justify-content: center;
   padding: 28px 19px 22px 19px;
+
+  background-color: $color-white;
+
+  &--grey {
+    background-color: $color-white-smoke;
+  }
 }
 
 .contacts__title {
@@ -19,10 +25,10 @@
 .contacts__text {
   max-width: 140px;
 
+  font-style: normal;
   font-size: 14px;
   line-height: 20px;
   font-family: $font-family--main;
-  font-style: normal;
   color: $color-charcoal;
 }
 

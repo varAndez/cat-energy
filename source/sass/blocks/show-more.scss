@@ -3,9 +3,17 @@
   flex-direction: column;
   align-items: center;
   margin-top: 37px;
+
+  border-bottom: 1px solid $color-gainsboro;
+}
+
+.show-more__link {
+  left: 50%;
 }
 
 .show-more__title {
+  padding-top: 23px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -25,22 +33,7 @@
   color: $color-charcoal;
 }
 
-.button__show-all {
+.show-more__button {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
-/* color: $color-charcoal;
-
-  background-color: $color-white-smoke;
-
-  &:hover,
-  &:focus {
-    background-color: $color-whisper-button;
-  }
-
-  &:active {
-    color: $color-charcoal-opacity;
-
-    background-color: $color-whisper-button;
-  }
-} */

@@ -20,7 +20,7 @@
     width: 100%;
     height: 304px;
 
-    background-color: $color-apple-transparent;
+    background-color: transparentize($color-apple, 0.15);
     background-image: url("../img/background-mobile.png");
     background-repeat: no-repeat;
     background-position: 50%;

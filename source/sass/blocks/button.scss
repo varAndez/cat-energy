@@ -19,8 +19,25 @@
   }
 
   &:active {
-    color: $color-white-opacity;
+    color: opacify($color-white, 0.7);
 
     background-color: $color-limeade;
+  }
+
+  &--grey {
+    color: $color-charcoal;
+
+    background-color: $color-white-smoke;
+  }
+
+  &--grey:hover,
+  &--grey:focus {
+    color: $color-charcoal;
+
+    background-color: $color-whisper-button;
+  }
+
+  &--grey:active {
+    color: opacify($color-charcoal, 0.7);
   }
 }

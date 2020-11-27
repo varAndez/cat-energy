@@ -1,11 +1,16 @@
 .catalog__title {
   margin: 0;
+  padding-top: 27px;
+  padding-bottom: 41px;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   font-family: $font-family--second;
   color: $color-black;
+
+  border-top: 1px solid $color-gainsboro;
+  border-bottom: 1px solid $color-gainsboro;
 }
 
 .catalog__list {
@@ -15,11 +20,14 @@
 .catalog__item {
   display: grid;
 
+  border-bottom: 1px solid $color-gainsboro;
+
   grid-template: "a c"
     "b b";
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
 }
+
 
 .catalog__image-link {
   grid-area: a;
@@ -52,6 +60,7 @@
 }
 
 .catalog__button {
-  grid-area: b;
   width: 100%;
+  margin-bottom: 25px;
+  grid-area: b;
 }
