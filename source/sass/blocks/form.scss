@@ -60,6 +60,9 @@
 .form__input,
 .form__response {
   border: 1px solid $color-very-light-grey;
+  padding-top: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .form__label,
@@ -80,43 +83,71 @@
 
 .form__label {
   position: relative;
-}
 
-.form__label--radio {
-  padding-left: 45px;
+  flex-grow: 0;
+  padding-right: 13px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 0;
+  &--radio {
+    padding-left: 45px;
 
-    width: 30px;
-    height: 30px;
+    color: $color-nero;
 
-    border: 1px solid $color-very-light-grey;
-    border-radius: 50%;
-  }
-
-  &:hover,
-  &:focus {
     &::before {
-      border: 1px solid $color-silver;
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+
+      border: 1px solid $color-very-light-grey;
+      border-radius: 50%;
     }
   }
 
-  &:active {
-    opacity: 0.3;
+  &--checkbox {
+    padding-left: 45px;
 
-    &::before,
-    &::after {
+    color: $color-nero;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+
+      border: 1px solid $color-very-light-grey;
+    }
+  }
+
+  &--radio,
+  &--checkbox {
+    &:hover,
+    &:focus {
+      &::before {
+        border: 1px solid $color-silver;
+      }
+    }
+
+    &:active {
       opacity: 0.3;
+
+      &::before,
+      &::after {
+        opacity: 0.3;
+      }
     }
   }
 }
 
 
-.form__input-radio:checked + label {
+.form__input--radio:checked + label {
   &::after {
     content: "";
     position: absolute;
@@ -131,8 +162,21 @@
   }
 }
 
+.form__input--checkbox:checked + label {
+  &::before {
+    content: "";
+
+    background: url("../img/icon_checkbox.svg") no-repeat;
+    background-position: 4px 6px;
+    background-size: 21px 16px;
+  }
+}
+
+
 .form__required-field {
   margin: 0;
+  padding-top: 21px;
+  padding-bottom: 32px;
 
   font-weight: 400;
   font-size: 14px;
@@ -140,4 +184,8 @@
   font-family: $font-family--main;
   text-align: center;
   color: $color-black;
+}
+
+.form__button {
+  width: 100%;
 }
