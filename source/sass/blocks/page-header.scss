@@ -5,6 +5,25 @@
 .page-header__wrapper {
   display: flex;
   align-items: center;
-  padding-bottom: 18px;
   padding-right: 21px;
+  padding-bottom: 17px;
+}
+
+@media (min-width: $tablet) {
+  .page-header {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: 0 30px;
+  }
+
+  .page-header__logo {
+    margin-right: 95px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
 }
