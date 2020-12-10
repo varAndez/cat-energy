@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+
   &--closed {
     .main-nav__toggle::before {
       content: "";
