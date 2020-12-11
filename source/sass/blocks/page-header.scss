@@ -12,9 +12,12 @@
 @media (min-width: $tablet) {
   .page-header {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 20px auto;
-    padding: 0 30px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 25px;
+    padding-bottom: 65px;
   }
 
   .page-header__logo {

@@ -76,3 +76,9 @@
   color: $color-black;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet) {
+  .programs__text {
+    border: none;
+  }
+}
