@@ -8,12 +8,61 @@
   line-height: 40px;
   font-family: $font-family--second;
   color: $color-black;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__text {
   font-family: $font-family--main;
   color: $color-charcoal;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+
+  @include list-reset;
+}
+
+.example__value {
+  display: flex;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-family--second;
+  color: $color-black;
+  text-transform: uppercase;
+
+  dd {
+    margin-left: 3px;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__attribute {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $font-family--main;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
 
 .example__total {
   font-weight: 400;
@@ -21,4 +70,9 @@
   line-height: 20px;
   font-family: $font-family--second;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
