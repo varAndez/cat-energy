@@ -2,7 +2,21 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   &--closed {
+    .main-nav__list {
+      display: none;
+
+      @media (min-width: $tablet) {
+        display: flex;
+      }
+    }
+
     .main-nav__toggle::before {
       content: "";
       position: absolute;
@@ -46,6 +60,16 @@
       }
     }
   }
+
+  &--nojs {
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav__list {
+      display: block;
+    }
+  }
 }
 
 .main-nav__toggle {
@@ -60,43 +84,23 @@
   background-color: #ffffff;
   border: none;
   cursor: pointer;
-}
 
-@media (min-width: $tablet) {
-  .main-nav {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .main-nav__toggle {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
 
-@media (max-width: $mobile) {
-  .main-nav {
-    &--closed {
-      .main-nav__list {
-        display: none;
-      }
-    }
-
-    &--nojs {
-      .main-nav__toggle {
-        display: none;
-      }
-
-      .main-nav__list {
-        display: block;
-      }
-    }
-  }
-}
-///////////////////////////////////////////////
 .main-nav__list {
   text-align: center;
 
   @include list-reset;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 440px;
+  }
 }
 
 .main-nav__item {
@@ -104,6 +108,12 @@
   padding-bottom: 24px;
 
   border-top: 1px solid $color-whisper-border;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+
+    border: none;
+  }
 }
 
 .main-nav__link {
@@ -114,33 +124,8 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-
-@media (min-width: $tablet) {
-  .main-nav {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 440px;
-  }
-
-  .main-nav__item {
-    padding: 0;
-
-    border: none;
-  }
-
-  .main-nav__link {
+  @media (min-width: $tablet) {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;

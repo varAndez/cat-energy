@@ -1,5 +1,15 @@
 .page-header {
   padding-top: 12px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 25px;
+    padding-bottom: 65px;
+  }
 }
 
 .page-header__wrapper {
@@ -7,24 +17,8 @@
   align-items: center;
   padding-right: 21px;
   padding-bottom: 17px;
-}
 
-@media (min-width: $tablet) {
-  .page-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0;
-    margin-left: 0;
-    padding-top: 25px;
-    padding-bottom: 65px;
-  }
-
-  .page-header__logo {
-    margin-right: 95px;
-  }
-
-  .page-header__wrapper {
+  @media (min-width: $tablet) {
     display: flex;
     align-items: center;
     padding: 0;
