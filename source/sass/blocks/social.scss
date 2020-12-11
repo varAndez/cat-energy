@@ -1,29 +1,67 @@
-.page-footer__social {
-  @include list-reset;
-}
-
 .social {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid $color-gainsboro;
+  border-bottom: 1px solid $color-gainsboro;
+
+  @include list-reset;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
 }
 
 .social__item {
   display: flex;
   padding-top: 20px;
-  padding-right: 35px;
+  padding-right: 36px;
   padding-bottom: 20px;
 
   &:last-child {
     padding-right: 0;
   }
+
+  @media (min-width: $tablet) {
+    padding-right: 27px;
+  }
 }
 
 .social__link {
-  display: flex;
   justify-content: center;
-  align-items: center;
+
+  text-align: center;
+
+  &--vk {
+    width: 23px;
+    height: 16px;
+
+    @media (min-width: $tablet) {
+      width: 30px;
+      height: 22px;
+    }
+  }
+
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+
+    @media (min-width: $tablet) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+
+  &--facebook {
+    width: 22px;
+    height: 22px;
+
+    @media (min-width: $tablet) {
+      width: 28px;
+      height: 33px;
+    }
+  }
 }
