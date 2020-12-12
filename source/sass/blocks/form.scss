@@ -279,6 +279,10 @@
   color: $color-black;
 }
 
+textarea {
+  resize: none;
+}
+
 
 .form__button {
   width: 100%;
