@@ -1,41 +1,54 @@
 .instructions__title {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 28px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   font-family: $font-family--second;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .instructions__list {
   @include list-reset;
 }
 
+.instructions__item {
+  display: flex;
+  padding-bottom: 20px;
+
+  svg {
+    min-width: 60px;
+    min-height: 60px;
+  }
+}
+
 
 .instructions__text {
-  padding-left: 100px;
+  padding-left: 20px;
 
   font-family: $font-family--main;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
-.instructions__item::before {
-  content: "";
-  position: absolute;
-
+.instructions__item--sheet,
+.instructions__item--powder,
+.instructions__item--cutlery,
+.instructions__item--clock {
   width: 60px;
   height: 60px;
-}
 
-.instructions__item--icon-1::before {
-  background-image: url("../img/green-back-1.svg");
-}
-
-.instructions__item--icon-2::before {
-  background-image: url("../img/green-back-2.svg");
-}
-
-.instructions__item--icon-3::before {
-  background-image: url("../img/green-back-3.svg");
-}
-
-.instructions__item--icon-4::before {
-  background-image: url("../img/green-back-4.svg");
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 80px;
+  }
 }

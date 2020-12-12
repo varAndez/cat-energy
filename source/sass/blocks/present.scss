@@ -2,13 +2,24 @@
   width: 280px;
   height: 289px;
   margin: 0 auto;
+  margin-top: 39px;
   margin-bottom: 35px;
 
-  background-image: url("../img/present-backgound.png");
+  background: no-repeat url("../img/present-backgound.png");
+
+  @media (min-width: $tablet) {
+    width: 708px;
+    height: 200px;
+    margin-top: 69px;
+    padding: 0;
+
+    background: no-repeat url("../img/present-backgound-tablet.png");
+  }
 }
 
 .present__text {
   position: relative;
+
   padding: 186px 61px 43px 58px;
 
   font-weight: 400;
@@ -17,13 +28,29 @@
   font-family: $font-family--main;
   text-align: center;
   color: $color-white;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding-left: 423px;
+    padding-top: 71px;
+    padding-right: 124px;
+    text-align: left;
+  }
 }
 
 .present__text--icon::before {
-  background-image: url("../img/present-box.svg");
   content: "";
   position: absolute;
+  top: 58px;
+  left: 50%;
+
   width: 78px;
   height: 80px;
-  top: 58px;
+
+  background-image: url("../img/present-box.svg");
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet) {
+    left: 78px;
+  }
 }

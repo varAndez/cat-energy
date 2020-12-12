@@ -1,7 +1,10 @@
 .page-footer {
-  padding: 0 20px;
-
   background-color: $color-white-smoke;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {
