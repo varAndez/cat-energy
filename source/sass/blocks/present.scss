@@ -5,7 +5,16 @@
   margin-top: 39px;
   margin-bottom: 35px;
 
-  background-image: url("../img/present-backgound.png");
+  background: no-repeat url("../img/present-backgound.png");
+
+  @media (min-width: $tablet) {
+    width: 708px;
+    height: 200px;
+    margin-top: 69px;
+    padding: 0;
+
+    background: no-repeat url("../img/present-backgound-tablet.png");
+  }
 }
 
 .present__text {
@@ -19,6 +28,14 @@
   font-family: $font-family--main;
   text-align: center;
   color: $color-white;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding-left: 423px;
+    padding-top: 71px;
+    padding-right: 124px;
+    text-align: left;
+  }
 }
 
 .present__text--icon::before {
@@ -32,4 +49,8 @@
 
   background-image: url("../img/present-box.svg");
   transform: translateX(-50%);
+
+  @media (min-width: $tablet) {
+    left: 78px;
+  }
 }
