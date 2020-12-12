@@ -65,3 +65,20 @@
     }
   }
 }
+
+.social__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $font-family--main;
+  color: $color-charcoal;
+
+  @media (min-width: $tablet) {
+    svg {
+      margin-left: 22px;
+    }
+  }
+}
