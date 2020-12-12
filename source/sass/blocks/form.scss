@@ -5,20 +5,30 @@
 
 .form__title {
   margin: 0;
-  margin-top: 27px;
-  margin-bottom: 37px;
+  padding-top: 27px;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   font-family: $font-family--second;
   color: $color-black;
+
+  border-top: 1px solid $color-gainsboro;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    border: none;
+  }
 }
 
 .form__subtitle {
   margin: 0;
-  margin-top: 37px;
-  margin-bottom: 39px;
+  padding-top: 37px;
+  padding-bottom: 39px;
 
   font-weight: 400;
   font-size: 14px;
@@ -26,43 +36,108 @@
   font-family: $font-family--second;
   color: $color-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    padding-top: 54px;
+    padding-bottom: 66px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__list {
   display: flex;
   flex-direction: column;
+  padding-top: 24px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid $color-gainsboro;
 
   @include list-reset;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
 }
 
 .form__item {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 13px;
+  margin-bottom: 14px;
+
+
+  &:last-child {
+    margin-bottom: 24px;
+  }
 }
 
 .form__caption {
   margin: 0;
   padding-top: 26px;
-  padding-bottom: 32px;
+  padding-bottom: 21px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   font-family: $font-family--second;
   color: $color-black;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__response {
   min-height: 150px;
 }
 
+.form__input {
+  position: relative;
+}
+
+.form__input-icon {
+  position: absolute;
+  right: 13px;
+
+
+  @media (min-width: $tablet) {
+    right: 20px;
+  }
+}
+
 .form__input,
 .form__response {
-  border: 1px solid $color-very-light-grey;
-  padding-top: 10px;
-  padding-left: 12px;
   padding-right: 12px;
+  padding-left: 12px;
+
+  border: 1px solid $color-very-light-grey;
+
+  &:hover {
+    border: 1px solid $color-very-light-grey;
+  }
+
+  &:active,
+  &:focus {
+    outline: 2px solid $color-charcoal;
+
+    ~ svg {
+      fill: $color-apple;
+    }
+  }
+
+  &::placeholder {
+    color: $color-charcoal;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid $color-light-coral;
+
+    ~ svg {
+      fill: $color-light-coral;
+    }
+  }
 }
 
 .form__label,
@@ -70,8 +145,8 @@
 .form__response {
   display: flex;
   flex-grow: 1;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 13px;
+  padding-bottom: 14px;
 
   font-weight: 400;
   font-size: 16px;
@@ -79,6 +154,12 @@
   font-family: $font-family--second;
   color: $color-charcoal;
   text-transform: uppercase;
+
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__label {
@@ -95,7 +176,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 6px;
+      top: 8px;
       left: 0;
 
       box-sizing: border-box;
@@ -115,7 +196,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 5px;
+      top: 8px;
       left: 0;
 
       box-sizing: border-box;
@@ -151,7 +232,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 17px;
     left: 9px;
 
     width: 12px;
@@ -185,6 +266,7 @@
   text-align: center;
   color: $color-black;
 }
+
 
 .form__button {
   width: 100%;
