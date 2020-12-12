@@ -143,8 +143,10 @@
 .form__label,
 .form__input,
 .form__response {
+  position: relative;
   display: flex;
   flex-grow: 1;
+  align-items: center;
   padding-top: 13px;
   padding-bottom: 14px;
 
@@ -154,6 +156,14 @@
   font-family: $font-family--second;
   color: $color-charcoal;
   text-transform: uppercase;
+
+  span {
+    margin-right: 20px;
+  }
+
+  input {
+    flex-grow: 1;
+  }
 
 
   @media (min-width: $tablet) {
@@ -165,8 +175,6 @@
 .form__label {
   position: relative;
 
-  flex-grow: 0;
-  padding-right: 13px;
 
   &--radio {
     padding-left: 45px;
