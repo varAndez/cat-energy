@@ -298,10 +298,15 @@
     <section class="contacts">
       <div class="contacts__wrapper contacts__wrapper--grey">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contacts__text">ул. Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</address>
+        <address class="contacts__text">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span
+            class="contacts__text--city">Санкт-Петербург</span></address>
       </div>
       <div class="contacts__map">
-        <img src="img/location.jpg" width="320" height="362" alt="Карта с местоположением магазина">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/location-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/location-tablet.jpg">
+          <img src="img/location.jpg" alt="Карта с местоположением магазина">
+        </picture>
       </div>
     </section>
 
