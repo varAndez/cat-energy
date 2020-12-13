@@ -1,3 +1,89 @@
+
+.compare__image {
+  position: relative;
+
+  width: 311px;
+  min-height: 232px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+
+  &--before,
+  &--after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+.compare__range {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+
+  input {
+    width: 84px;
+
+    background: transparent;
+
+    appearance: none;
+
+    @media (min-width: $tablet) {
+      width: 428px;
+    }
+
+    &::-webkit-slider-runnable-track {
+      height: 14px;
+
+      background-color: $color-white;
+      border: 1px solid $color-very-light-grey;
+      border-radius: 6px;
+
+      @media (min-width: $tablet) {
+        height: 6px;
+
+        background-color: $color-very-light-grey;
+        border: none;
+      }
+    }
+
+    &::-webkit-slider-thumb {
+      width: 35px;
+      height: 6px;
+      margin-top: 3px;
+
+      background: $color-apple;
+      border-radius: 6px;
+      cursor: pointer;
+
+      appearance: none;
+
+      @media (min-width: $tablet) {
+        width: 34px;
+        height: 34px;
+        margin-top: -15px;
+
+        background: $color-apple;
+        border: 1px solid $color-very-light-grey;
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 12px $color-white;
+        filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+
+
+        &:hover {
+          filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+        }
+
+        &:active {
+          border-color: $color-apple;
+        }
+      }
+    }
+  }
+}
+
 .compare__button {
   padding: 0;
 
@@ -9,4 +95,12 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.compare__button--before {
+  margin-right: 13px;
+}
+
+.compare__button--after {
+  margin-left: 13px;
 }

@@ -79,17 +79,23 @@
   }
 }
 
-.contacts__map img {
+.contacts__map {
   width: 100%;
   height: 362px;
-  margin: 0;
-  padding: 0;
+
+  background-image: url("../img/img/location.jpg");
 
   @media (min-width: $tablet) {
     height: 400px;
+
+    background-image: url("../img/img/location-tablet.jpg");
   }
 
   @media (min-width: $desktop) {
     position: relative;
+
+    height: 400px;
+
+    background-image: url("../img/img/location-desktop.jpg");
   }
 }

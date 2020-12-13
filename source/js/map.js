@@ -1,27 +1,20 @@
-function initMap() {
-  var coordinates = { lat: 59.938835, lng: 30.323112 },
+{
+  function initMap() {
 
-    map = new google.maps.Map(document.getElementById('.contacts__map'), {
-      center: coordinates
-    });
-}
+    const uluru = { lat: 59.939033513366084, lng: 30.32128792141334 };
+    const markerPos = { lat: 59.938753982836836, lng: 30.32304743616715 };
+    const markerIcon = './img/map-pin.png';
 
-function initMap() {
-  var coordinates = { lat: 59.938835, lng: 30.323112 },
-
-    map = new google.maps.Map(document.getElementById('.contacts__map'), {
-      center: coordinates
-    }),
-
-    marker = new google.maps.Marker({
-      position: coordinates,
-      map: map
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 16,
+      center: uluru,
+      disableDefaultUI: true,
     });
 
-  image = 'img/map-pin.png',
-    marker = new google.maps.Marker({
-      position: coordinates,
+    const marker = new google.maps.Marker({
+      position: markerPos,
       map: map,
-      icon: image
+      icon: markerIcon,
     });
+  }
 }

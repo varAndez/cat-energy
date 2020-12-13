@@ -3,6 +3,8 @@
 }
 
 .example__title {
+  padding-top: 27px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -16,6 +18,9 @@
 }
 
 .example__text {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-family: $font-family--main;
   color: $color-charcoal;
 
@@ -27,13 +32,31 @@
 
 .example__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   @include list-reset;
 }
 
+.example__item {
+  position: relative;
+
+  width: 124px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+
+  border: 1px solid $color-very-light-grey;
+  border-radius: 3px;
+  margin-right: 31px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .example__value {
   display: flex;
+  justify-content: center;
+  margin: 0;
 
   font-weight: 400;
   font-size: 14px;
@@ -53,9 +76,20 @@
 }
 
 .example__attribute {
+  position: absolute;
+  right: 0;
+  bottom: -14px;
+  left: 0;
+
+  width: 87px;
+  margin: 0 auto;
+
   font-size: 12px;
   line-height: 12px;
   font-family: $font-family--main;
+  text-align: center;
+
+  background-color: $color-whisper;
 
   @media (min-width: $tablet) {
     font-size: 14px;
@@ -65,11 +99,19 @@
 
 
 .example__total {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   font-family: $font-family--second;
   text-transform: uppercase;
+
+  dd {
+    margin-left: 4px;
+  }
 
   @media (min-width: $tablet) {
     font-size: 20px;
