@@ -1,8 +1,6 @@
 
 .compare__image {
   position: relative;
-
-  width: 311px;
   min-height: 232px;
   margin: 0 auto;
   margin-bottom: 23px;
@@ -14,6 +12,8 @@
     right: 0;
     bottom: 0;
     left: 0;
+    width: 311px;
+    height: 232px;
   }
 }
 
