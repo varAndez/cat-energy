@@ -1,6 +1,8 @@
 
 .compare__image {
   position: relative;
+  display: flex;
+  justify-content: center;
   min-height: 232px;
   margin: 0 auto;
   margin-bottom: 23px;
@@ -8,10 +10,6 @@
   &--before,
   &--after {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     width: 311px;
     height: 232px;
   }
