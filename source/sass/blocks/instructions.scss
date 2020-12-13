@@ -20,7 +20,8 @@
 
 .instructions__item {
   display: flex;
-  padding-bottom: 20px;
+  align-items: center;
+  margin-bottom: 20px;
 
   svg {
     min-width: 60px;
@@ -30,6 +31,11 @@
 
 
 .instructions__text {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: left;
+  align-items: center;
   padding-left: 20px;
 
   font-family: $font-family--main;
@@ -44,6 +50,8 @@
 .instructions__item--powder,
 .instructions__item--cutlery,
 .instructions__item--clock {
+  display: flex;
+  justify-content: center;
   width: 60px;
   height: 60px;
 
