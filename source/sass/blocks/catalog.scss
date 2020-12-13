@@ -31,7 +31,7 @@
 
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    grid-template-columns: repeat(2, 324px);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -45,18 +45,64 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
 
+
   @media (min-width: $tablet) {
+    border: none;
+    min-height: 430px;
+    background-color: $color-white-smoke;
     grid-template: "a"
       "c"
       "b";
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    border: none;
+
+    &--show-more {
+      background-color: $color-white;
+      border: 2px solid $color-gainsboro;
+
+      grid-template: "a"
+        "t"
+        "c"
+        "b";
+    }
+  }
+
+  &--show-more {
+    grid-template: "a"
+      "t"
+      "c"
+      "b";
+  }
+}
+
+.catalog__icon-show-more {
+  margin-top: 25px;
+
+  text-align: center;
+
+  grid-area: a;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 52px;
+
+    svg {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
 
 .catalog__image-link {
   grid-area: a;
+
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
 }
 
 .catalog__link-title {
@@ -69,7 +115,32 @@
 
   @media (min-width: $tablet) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 159px;
+    margin: 0 auto;
+  }
+
+  &--show-more {
+    padding-top: 23px;
+
+    text-align: center;
+
+    grid-area: t;
+
+    @media (min-width: $tablet) {
+      margin-top: 49px;
+      padding: 0 90px;
+
+      font-size: 20px;
+      line-height: 21px;
+
+      &--show-more {
+        line-height: 22px;
+      }
+    }
   }
 }
 
@@ -82,8 +153,28 @@
 
   grid-area: c;
 
+
   @media (min-width: $tablet) {
     font-size: 16px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  &--show-more {
+    padding-top: 8px;
+    padding-bottom: 21px;
+
+    text-align: center;
+
+    grid-area: c;
+
+    @media (min-width: $tablet) {
+      margin-top: 23px;
+      margin-bottom: 87px;
+      padding: 0 75px;
+
+      line-height: 18px;
+    }
   }
 }
 
@@ -99,4 +190,16 @@
   margin-bottom: 25px;
 
   grid-area: b;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 39px;
+    margin-right: 37px;
+    margin-left: 39px;
+    margin-bottom: 40px;
+  }
 }

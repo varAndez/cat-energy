@@ -83,12 +83,12 @@
   width: 100%;
   height: 362px;
 
-  background-image: url("../img/img/location.jpg");
+  background-image: url("../img/location.jpg");
 
   @media (min-width: $tablet) {
     height: 400px;
 
-    background-image: url("../img/img/location-tablet.jpg");
+    background-image: url("../img/location-tablet.jpg");
   }
 
   @media (min-width: $desktop) {
@@ -96,6 +96,6 @@
 
     height: 400px;
 
-    background-image: url("../img/img/location-desktop.jpg");
+    background-image: url("../img/location-desktop.jpg");
   }
 }
