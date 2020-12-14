@@ -1,3 +1,7 @@
+.form {
+  overflow-x: hidden;
+}
+
 .form__fieldset {
   display: flex;
   flex-direction: column;
@@ -73,9 +77,12 @@
 }
 
 .form__caption {
+  position: relative;
+  width: fit-content;
+  display: inline-flex;
   margin: 0;
-  padding-top: 26px;
-  padding-bottom: 21px;
+  margin-top: 26px;
+  margin-bottom: 21px;
 
   font-weight: 400;
   font-size: 24px;
@@ -83,9 +90,36 @@
   font-family: $font-family--second;
   color: $color-black;
 
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 55%;
+    z-index: -1;
+
+    width: 100vw;
+    height: 3px;
+  }
+
+  &::after {
+    right: -20px;
+
+    background-color: $color-apple;
+    transform: translateX(100%);
+  }
+
+
   @media (min-width: $tablet) {
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      left: -20px;
+
+      background-color: $color-apple;
+      transform: translateX(-100%);
+    }
   }
 }
 
