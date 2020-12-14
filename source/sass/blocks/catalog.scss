@@ -33,6 +33,11 @@
     gap: 140px 60px;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @media (min-width: $desktop) {
+    gap: 144px 80px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .catalog__item {
@@ -93,15 +98,21 @@
       position: absolute;
       top: 52px;
       left: 50%;
-      transform: translateX(-50%);
 
       width: 60px;
       height: 60px;
+
+      transform: translateX(-50%);
     }
   }
 }
 
 .catalog__image-link {
+  align-self: center;
+  margin-top: 22px;
+
+  text-align: center;
+
   grid-area: a;
 
   @media (min-width: $tablet) {
@@ -118,6 +129,9 @@
 }
 
 .catalog__link-title {
+  padding-right: 20px;
+  padding-left: 20px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -156,6 +170,9 @@
 }
 
 .catalog__text {
+  padding-right: 20px;
+  padding-left: 20px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;

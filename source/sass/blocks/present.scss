@@ -15,6 +15,17 @@
 
     background: no-repeat url("../img/present-backgound-tablet.png");
   }
+
+  @media (min-width: $desktop) {
+    display: inline-block;
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    margin-bottom: 86px;
+    padding: 0;
+
+    background: no-repeat url("../img/present-backgound.png");
+  }
 }
 
 .present__text {
@@ -31,10 +42,17 @@
 
   @media (min-width: $tablet) {
     margin: 0;
-    padding-left: 423px;
     padding-top: 71px;
     padding-right: 124px;
+    padding-left: 423px;
+
     text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 40px;
+    text-align: center;
+    margin: 0;
   }
 }
 
@@ -52,5 +70,11 @@
 
   @media (min-width: $tablet) {
     left: 78px;
+  }
+
+  @media (min-width: $tablet) {
+    left: 50%;
+    top: 58px;
+    transform: translateX(-50%);
   }
 }
