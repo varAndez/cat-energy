@@ -50,8 +50,8 @@
 
 
         <!-- Указываем имя, вес и возраст кота-->
-        <div class="form__fieldset">
-          <ul class="form__list">
+        <div class="form__fieldset form__fieldset--data">
+          <ul class="form__list form__list--data">
             <li class="form__item">
               <label class="form__label">
                 <span>Имя:*</span>
@@ -74,8 +74,8 @@
         </div>
 
         <!-- Выбираем программу: похудение или набор массы, так же можем помочь советом.-->
-        <div class="form__fieldset">
-          <ul class="form__list">
+        <div class="form__fieldset form__fieldset--programs">
+          <ul class="form__list form__list--programs">
             <li class="form__item">
               <input class="form__input--radio visually-hidden" type="radio" name="program" value="slimming"
                 id="form-slimming" checked />
@@ -99,8 +99,8 @@
         <!-- Указываем контактные данные-->
         <div class="form__fieldset">
           <h2 class="form__caption">Контактные данные (владельца кота)</h2>
-          <ul class="form__list">
-            <li class="form__item">
+          <ul class="form__list form__list--contact">
+            <li class="form__item form__item--contact">
               <label class="form__label">
                 <span>Email:*</span>
                 <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -115,7 +115,7 @@
                 </svg>
               </label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--contact">
               <label class="form__label">
                 <span>Телефон:*</span>
                 <input class="form__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
@@ -150,28 +150,28 @@
 
         <!-- Дополнительные товары-->
         <div class="form__fieldset">
-          <h2 class="form__caption">Дополнительно</h2>
-          <ul class="form__list">
+          <h2 class="form__caption ">Дополнительно</h2>
+          <ul class="form__list form__list--other">
 
-            <li class="form__item">
+            <li class="form__item form__item--other">
               <input class="form__input--checkbox visually-hidden" type="checkbox" name="additional-info"
                 value="sweetener" id="food-sweetener">
               <label class="form__label form__label--checkbox" for="food-sweetener">Сахарозаменитель</label>
             </li>
 
-            <li class="form__item">
+            <li class="form__item form__item--other">
               <input class="form__input--checkbox visually-hidden" type="checkbox" name="additional-info" value="water"
                 id="food-water">
               <label class="form__label form__label--checkbox" for="food-water">Питьевая вода</label>
             </li>
 
-            <li class="form__item">
+            <li class="form__item form__item--other">
               <input class="form__input--checkbox visually-hidden" type="checkbox" name="additional-info" value="milk"
                 id="food-milk">
               <label class="form__label form__label--checkbox" for="food-milk">Молоко</label>
             </li>
 
-            <li class="form__item">
+            <li class="form__item form__item--other">
               <input class="form__input--checkbox visually-hidden" type="checkbox" name="additional-info"
                 value="vitamins" id="food-vitamins">
               <label class="form__label form__label--checkbox" for="food-vitamins">Витамины</label>
@@ -184,7 +184,7 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper contacts__wrapper--grey">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="contacts__text">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span
             class="contacts__text--city">Санкт-Петербург</span></address>

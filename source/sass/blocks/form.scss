@@ -5,6 +5,26 @@
 .form__fieldset {
   display: flex;
   flex-direction: column;
+
+  &--data {
+    @media (min-width: $desktop) {
+      display: inline-block;
+      width: 47%;
+    }
+  }
+
+  &--programs {
+    @media (min-width: $tablet) {
+      border: 1px solid $color-whisper-border;
+    }
+
+    @media (min-width: $desktop) {
+      display: inline-block;
+      width: 47%;
+      justify-items: flex-end;
+      margin-left: 64px;
+    }
+  }
 }
 
 .form__title {
@@ -63,6 +83,29 @@
   @media (min-width: $tablet) {
     border: none;
   }
+
+
+  &--programs {
+    @media (min-width: $tablet) {
+      padding-right: 28px;
+      padding-left: 28px;
+    }
+  }
+
+  &--contact {
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &--other {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .form__item {
@@ -74,12 +117,29 @@
   &:last-child {
     margin-bottom: 24px;
   }
+
+  &--other {
+    @media (min-width: $tablet) {
+      width: 50%;
+    }
+
+    @media (min-width: $desktop) {
+      width: 25%;
+    }
+  }
+
+  &--contact {
+    @media (min-width: $desktop) {
+      width: 47%;
+    }
+  }
 }
 
 .form__caption {
   position: relative;
-  width: fit-content;
+
   display: inline-flex;
+  width: fit-content;
   margin: 0;
   margin-top: 26px;
   margin-bottom: 21px;
@@ -111,6 +171,8 @@
 
 
   @media (min-width: $tablet) {
+    margin-bottom: 76px;
+
     font-size: 36px;
     line-height: 36px;
 
@@ -121,10 +183,18 @@
       transform: translateX(-100%);
     }
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 57px;
+  }
 }
 
 .form__response {
   min-height: 150px;
+
+  @media (min-width: $tablet) {
+    min-height: 174px;
+  }
 }
 
 .form__input {
@@ -230,6 +300,11 @@
       border-radius: 50%;
       transform: translateY(-50%);
     }
+
+    @media (min-width: $tablet) {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
   }
 
   &--checkbox {
@@ -303,7 +378,6 @@
 .form__required-field {
   margin: 0;
   padding-top: 21px;
-  padding-bottom: 32px;
 
   font-weight: 400;
   font-size: 14px;
@@ -311,6 +385,16 @@
   font-family: $font-family--main;
   text-align: center;
   color: $color-black;
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+    width: 50%;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 }
 
 textarea {
@@ -320,4 +404,9 @@ textarea {
 
 .form__button {
   width: 100%;
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+    width: 45%;
+  }
 }

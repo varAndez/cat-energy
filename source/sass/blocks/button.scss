@@ -40,4 +40,8 @@
   &--grey:active {
     color: rgba($color-charcoal, 0.7);
   }
+
+  @media (min-width: $tablet) {
+    padding: 13px 45px;
+  }
 }
