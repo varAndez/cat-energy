@@ -3,6 +3,10 @@
   flex-direction: column;
   width: 100%;
   padding-top: 22px;
+
+  @media (min-width: $desktop) {
+    margin-top: 267px;
+  }
 }
 
 .programs__wrapper {

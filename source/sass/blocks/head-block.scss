@@ -41,6 +41,21 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop) {
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: auto;
+
+      display: block;
+      width: 720px;
+      height: 694px;
+
+      background-image: url("../img/background-desktop.png");
+    }
+  }
 }
 
 .head-block__title {
@@ -56,10 +71,10 @@
   @media (min-width: $tablet) {
     justify-content: flex-start;
     order: -3;
+    width: 600px;
     margin: 0;
     margin-bottom: 41px;
     padding: 0;
-    width: 600px;
     padding-left: 87px;
 
     font-size: 60px;
@@ -95,15 +110,23 @@
 @media (min-width: $tablet) {
   .head-block__image {
     z-index: -1;
+
     transform: translateY(-50px);
+
+    @media (min-width: $desktop) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
 
 @media (min-width: $tablet) {
   .head-block__button {
-    order: -1;
     z-index: 1;
+
+    order: -1;
     margin-top: 49px;
     margin-left: 87px;
   }

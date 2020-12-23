@@ -1,5 +1,14 @@
 .form {
   overflow-x: hidden;
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 82px;
+  }
 }
 
 .form__fieldset {

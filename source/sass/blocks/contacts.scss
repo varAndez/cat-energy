@@ -1,9 +1,5 @@
 .contacts {
   position: relative;
-
-  @media (min-width: $desktop) {
-    margin-top: 82px;
-  }
 }
 
 .contacts__wrapper {
@@ -11,7 +7,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 28px 19px;
-  margin-top: 32px;
 
   background-color: $color-white;
 
@@ -20,7 +15,6 @@
   }
 
   @media (min-width: $tablet) {
-    margin-top: 72px;
     align-items: flex-start;
     padding: 65px 72px 58px 71px;
   }

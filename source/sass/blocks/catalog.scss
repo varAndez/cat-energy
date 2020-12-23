@@ -159,15 +159,14 @@
     text-align: center;
 
     @media (min-width: $tablet) {
-      font-size: 20px;
-      line-height: 21px;
+      padding: 0;
 
-      &--show-more {
-        line-height: 22px;
-      }
+      font-size: 20px;
+      line-height: 22px;
     }
   }
 }
+
 
 .catalog__text {
   padding-right: 20px;
@@ -204,6 +203,10 @@
       padding: 0 75px;
 
       line-height: 18px;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 0 39px;
     }
   }
 }
