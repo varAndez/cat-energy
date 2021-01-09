@@ -19,7 +19,7 @@
   }
 
   &:active {
-    color: opacify($color-white, 0.7);
+    color: rgba($color-white, 0.7);
 
     background-color: $color-limeade;
   }
@@ -38,6 +38,10 @@
   }
 
   &--grey:active {
-    color: opacify($color-charcoal, 0.7);
+    color: rgba($color-charcoal, 0.7);
+  }
+
+  @media (min-width: $tablet) {
+    padding: 13px 45px;
   }
 }

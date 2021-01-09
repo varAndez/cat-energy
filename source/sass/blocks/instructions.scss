@@ -1,3 +1,11 @@
+.instructions {
+  padding-bottom: 42px;
+
+  @media (min-width: $desktop) {
+    padding-bottom: 69px;
+  }
+}
+
 .instructions__title {
   margin: 0;
   padding-top: 27px;
@@ -9,34 +17,102 @@
   font-family: $font-family--second;
 
   @media (min-width: $tablet) {
+    padding-top: 45px;
+    padding-bottom: 72px;
+
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 71px;
   }
 }
 
 .instructions__list {
+  display: grid;
+
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+
   @include list-reset;
+
+  @media (min-width: $tablet) {
+    list-style-type: none;
+
+    counter-reset: number 0;
+
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .instructions__item {
   display: flex;
-  padding-bottom: 20px;
+  align-items: center;
+
 
   svg {
     min-width: 60px;
     min-height: 60px;
   }
+
+  @media (min-width: $tablet) {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 250px;
+    padding-bottom: 57px;
+
+    counter-increment: number;
+
+
+    &::after {
+      content: counter(number);
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $font-family--second;
+      color: $color-white-smoke;
+    }
+
+
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
 
 
 .instructions__text {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   padding-left: 20px;
 
   font-family: $font-family--main;
+  text-align: left;
 
   @media (min-width: $tablet) {
+    padding: 0;
+    padding-top: 31px;
+
     font-size: 16px;
     line-height: 24px;
+    text-align: left;
   }
 }
 
@@ -44,6 +120,8 @@
 .instructions__item--powder,
 .instructions__item--cutlery,
 .instructions__item--clock {
+  display: flex;
+  justify-content: center;
   width: 60px;
   height: 60px;
 

@@ -1,9 +1,14 @@
 .page-footer {
   background-color: $color-white-smoke;
+}
 
+.page-footer__wrapper {
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 61px;
   }
 }
 
@@ -12,4 +17,18 @@
   justify-content: center;
   padding-top: 39px;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

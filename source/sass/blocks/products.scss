@@ -1,3 +1,13 @@
+.products {
+  @media (min-width: $desktop) {
+    display: inline-block;
+    width: 80%;
+    padding-right: 79px;
+    margin-bottom: 86px;
+  }
+}
+
+
 .products__list {
   display: flex;
   flex-direction: column;
@@ -18,12 +28,30 @@
     padding-top: 26px;
     padding-right: 38px;
     padding-left: 38px;
+    padding-bottom: 28px;
 
     border: 1px solid $color-very-light-grey;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+
+    border: none;
+    border-top: 1px solid $color-very-light-grey;
+
+    &:last-child {
+      border-bottom: 1px solid $color-very-light-grey;
+    }
   }
 }
 
 .products__title {
+  position: relative;
+
+  display: inline-flex;
+  width: fit-content;
   margin: 0;
   padding-top: 28px;
   padding-bottom: 35px;
@@ -34,9 +62,45 @@
   font-family: $font-family--second;
   color: $color-black;
 
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+
+    width: 100vw;
+    height: 3px;
+  }
+
+  &::after {
+    right: -20px;
+
+    background-color: $color-apple;
+    transform: translateX(100%);
+  }
+
   @media (min-width: $tablet) {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      left: -20px;
+
+      background-color: $color-apple;
+      transform: translateX(-100%);
+    }
+  }
+}
+
+.products__info {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: space-between;
   }
 }
 
@@ -50,8 +114,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    width: 50%;
+
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 33%;
   }
 }
 
@@ -66,8 +136,17 @@
   color: $color-charcoal;
 
   @media (min-width: $tablet) {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: space-between;
+    width: 33%;
   }
 }
 
@@ -79,6 +158,13 @@
   margin-bottom: 19px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 28px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    align-items: center;
+    align-self: center;
+    width: 28%;
+    height: 40px;
   }
 }

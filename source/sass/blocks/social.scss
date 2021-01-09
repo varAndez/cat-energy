@@ -15,53 +15,119 @@
 
 .social__item {
   display: flex;
-  padding-top: 20px;
-  padding-right: 36px;
-  padding-bottom: 20px;
+  margin-right: 16px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   &:last-child {
-    padding-right: 0;
+    margin-right: 0;
   }
 
   @media (min-width: $tablet) {
-    padding-right: 27px;
+    margin-right: 27px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .social__link {
+  display: flex;
   justify-content: center;
-
-  text-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
 
   &--vk {
-    width: 23px;
-    height: 16px;
+    svg {
+      width: 23px;
+      height: 16px;
+    }
 
     @media (min-width: $tablet) {
-      width: 30px;
-      height: 22px;
+      svg {
+        width: 30px;
+        height: 22px;
+      }
     }
   }
 
 
   &--instagram {
-    width: 16px;
-    height: 16px;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
 
     @media (min-width: $tablet) {
-      width: 23px;
-      height: 23px;
+      svg {
+        width: 23px;
+        height: 23px;
+      }
     }
   }
 
 
   &--facebook {
-    width: 22px;
-    height: 22px;
+    svg {
+      width: 22px;
+      height: 22px;
+    }
 
     @media (min-width: $tablet) {
-      width: 28px;
-      height: 33px;
+      svg {
+        width: 28px;
+        height: 33px;
+      }
+    }
+  }
+}
+
+.social__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $font-family--main;
+  color: $color-charcoal;
+
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+
+    svg {
+      margin-left: 22px;
+    }
+  }
+}
+
+
+// Изменение состояний при наведении
+
+.social__text,
+.social__link {
+  svg {
+    fill: $color-charcoal;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $color-apple;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    svg {
+      fill: $color-apple;
     }
   }
 }

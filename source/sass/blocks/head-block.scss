@@ -1,7 +1,7 @@
 .head-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+
+  text-align: center;
 
   @media (min-width: $tablet) {
     position: relative;
@@ -10,6 +10,10 @@
 
 .head-block__wrapper {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   background-repeat: no-repeat;
   background-size: 100%;
@@ -24,17 +28,23 @@
     width: 100%;
     height: 304px;
 
-    background-color: transparentize($color-apple, 0.15);
+    background-color: rgba($color-apple, 0.85);
     background-image: url("../img/background-mobile.png");
     background-repeat: no-repeat;
     background-position: 50%;
   }
 
   @media (min-width: $tablet) {
-    padding-left: 120px;
+    align-items: baseline;
 
     &::before {
       display: none;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0;
+      padding: 0;
+      padding-right: 125px;
     }
   }
 }
@@ -50,15 +60,26 @@
   color: $color-white;
 
   @media (min-width: $tablet) {
-    width: 420px;
+    justify-content: flex-start;
+    order: -3;
+    width: 600px;
     margin: 0;
+    margin-bottom: 41px;
     padding: 0;
-    padding-bottom: 41px;
+    padding-left: 87px;
 
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     color: $color-black;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+    padding-top: 111px;
+    padding-bottom: 40px;
+    width: 420px;
   }
 }
 
@@ -70,41 +91,52 @@
   text-align: center;
   color: $color-white;
   text-transform: uppercase;
-}
-
-.head-block__image {
-  align-items: center;
-  margin: 0 auto;
 
   @media (min-width: $tablet) {
-    width: 420px;
+    order: -2;
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0;
+    padding-right: 207px;
+    padding-left: 87px;
 
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: $color-black;
   }
-}
 
-@media (min-width: $tablet) {
-  .head-block__image {
-    width: 709px;
-    height: 609px;
-    margin-left: 29px;
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 52px;
   }
 }
 
-@media (min-width: $tablet) {
-  .head-block__button {
-    position: absolute;
-    top: 230px;
+.head-block__image {
+  @media (min-width: $tablet) {
+    z-index: -1;
 
-    margin: 0 auto;
-    padding: 14px 26px;
+    transform: translateY(-50px);
 
-    font-size: 20px;
-    line-height: 20px;
+    @media (min-width: $desktop) {
+      position: absolute;
+      top: 25%;
+      left: 37%;
+      z-index: 0;
+    }
+  }
+}
+
+.head-block__button {
+  @media (min-width: $tablet) {
+    z-index: 1;
+
+    order: -1;
+    margin-top: 49px;
+    margin-left: 87px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }
