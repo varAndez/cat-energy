@@ -40,20 +40,11 @@
     &::before {
       display: none;
     }
-  }
 
-  @media (min-width: $desktop) {
-    &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: auto;
-
-      display: block;
-      width: 720px;
-      height: 694px;
-
-      background-image: url("../img/background-desktop.png");
+    @media (min-width: $desktop) {
+      margin: 0;
+      padding: 0;
+      padding-right: 125px;
     }
   }
 }
@@ -82,6 +73,14 @@
     text-align: left;
     color: $color-black;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+    padding-top: 111px;
+    padding-bottom: 40px;
+    width: 420px;
+  }
 }
 
 .head-block__text {
@@ -105,29 +104,39 @@
     text-align: left;
     color: $color-black;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 52px;
+  }
 }
 
-@media (min-width: $tablet) {
-  .head-block__image {
+.head-block__image {
+  @media (min-width: $tablet) {
     z-index: -1;
 
     transform: translateY(-50px);
 
     @media (min-width: $desktop) {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      top: 25%;
+      left: 37%;
+      z-index: 0;
     }
   }
 }
 
-
-@media (min-width: $tablet) {
-  .head-block__button {
+.head-block__button {
+  @media (min-width: $tablet) {
     z-index: 1;
 
     order: -1;
     margin-top: 49px;
     margin-left: 87px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }

@@ -1,3 +1,11 @@
+.instructions {
+  padding-bottom: 42px;
+
+  @media (min-width: $desktop) {
+    padding-bottom: 69px;
+  }
+}
+
 .instructions__title {
   margin: 0;
   padding-top: 27px;
@@ -9,28 +17,48 @@
   font-family: $font-family--second;
 
   @media (min-width: $tablet) {
+    padding-top: 45px;
+    padding-bottom: 72px;
+
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 71px;
   }
 }
 
 .instructions__list {
+  display: grid;
+
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+
   @include list-reset;
 
   @media (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
+    list-style-type: none;
+
+    counter-reset: number 0;
+
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .instructions__item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+
 
   svg {
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
   }
 
   @media (min-width: $tablet) {
@@ -40,19 +68,17 @@
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    width: 230px;
-    min-height: 280px;
-    margin-right: 157px;
-    margin-bottom: 37px;
+    width: 250px;
+    padding-bottom: 57px;
 
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
+    counter-increment: number;
+
 
     &::after {
+      content: counter(number);
       position: absolute;
-      top: 0;
       right: 0;
+      bottom: 0;
       z-index: -1;
 
       font-size: 280px;
@@ -61,46 +87,10 @@
       color: $color-white-smoke;
     }
 
-    &:nth-child(1) {
-      &::after {
-        content: "1";
-      }
-    }
-
-    &:nth-child(2) {
-      &::after {
-        content: "2";
-      }
-    }
-
-    &:nth-child(3) {
-      &::after {
-        content: "3";
-      }
-    }
-
-    &:nth-child(4) {
-      &::after {
-        content: "4";
-      }
-    }
 
     svg {
       width: 80px;
       height: 80px;
-      margin-top: 40px;
-    }
-  }
-
-  @media (min-width: $desktop) {
-    margin-right: 94px;
-
-    &:nth-child(2n) {
-      margin-right: 94px;
-    }
-
-    &:nth-child(4n) {
-      margin: 0;
     }
   }
 }
@@ -117,8 +107,8 @@
   text-align: left;
 
   @media (min-width: $tablet) {
-    margin-top: 31px;
     padding: 0;
+    padding-top: 31px;
 
     font-size: 16px;
     line-height: 24px;

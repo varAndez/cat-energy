@@ -79,7 +79,6 @@
   z-index: 2;
 
   width: 65px;
-  height: 65px;
 
   background-color: #ffffff;
   border: none;
@@ -153,15 +152,19 @@
         height: 2px;
 
         background-color: $color-apple;
-
-        @media (min-width: $desktop) {
-          background-color: $color-white;
-        }
       }
     }
   }
 
   @media (min-width: $desktop) {
-    color: $color-white;
+    &--index {
+      color: $color-white;
+    }
+
+    &--active-index {
+      &::after {
+        background-color: $color-white;
+      }
+    }
   }
 }

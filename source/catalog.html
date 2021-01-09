@@ -11,36 +11,42 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header container">
+  <div class="page-header__container">
     <div class="page-header__wrapper">
-      <a href="index.html" class="page-header__logo">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop.png 1x, img/logo-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.png 1x, img/logo-tablet@2x.png 2x">
-          <img class="page-header__link" src="img/logo-mobile.png" width="190" height="38"
-            alt="Интернет магазин Cat-energy">
-        </picture>
-      </a>
+      <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/logo-desktop.webp 1x, img/logo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/logo-tablet.webp 1x, img/logo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile.webp 1x, img/logo-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.png 1x, img/logo-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.png 1x, img/logo-tablet@2x.png 2x">
+            <img class="page-header__link" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x"
+              alt="Интернет магазин Cat-energy">
+          </picture>
+        </a>
+        <nav class="page-header__nav main-nav main-nav--opened main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class=" main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
-    <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть/закрыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class=" main-nav__item">
-          <a class="main-nav__link  main-nav__link--active">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
+  </div>
+  <main class="page__main">
     <section class="page-catalog catalog container">
       <h1 class="catalog__title">Каталог продукции</h1>
 
@@ -65,12 +71,12 @@
           </a>
           <div class="catalog__wrapper">
             <a class="catalog__link" href="#">
-              <h3 class="catalog__link-title">Cat Energy PRO 500 г</h3>
+              <h3 class="catalog__link-title">Cat Energy PRO 500&nbsp;г</h3>
             </a>
             <dl class="catalog__text">
               <div class="catalog__text-weight">
                 <dt>Масса</dt>
-                <dd>500 г</dd>
+                <dd>500&nbsp;г</dd>
               </div>
               <div class="catalog__text-taste">
                 <dt>Вкус</dt>
@@ -78,7 +84,7 @@
               </div>
               <div class="catalog__text-price">
                 <dt>Цена</dt>
-                <dd>700 Р.</dd>
+                <dd>1700&nbsp;Р.</dd>
               </div>
             </dl>
           </div>
@@ -104,12 +110,12 @@
           </a>
           <div class="catalog__wrapper">
             <a class="catalog__link" href="#">
-              <h3 class="catalog__link-title">Cat Energy PRO 1000 г</h3>
+              <h3 class="catalog__link-title">Cat Energy PRO 1000&nbsp;г</h3>
             </a>
             <dl class="catalog__text">
               <div class="catalog__text-weight">
                 <dt>Масса</dt>
-                <dd>1000 г</dd>
+                <dd>1000&nbsp;г</dd>
               </div>
               <div class="catalog__text-taste">
                 <dt>Вкус</dt>
@@ -117,7 +123,7 @@
               </div>
               <div class="catalog__text-price">
                 <dt>Цена</dt>
-                <dd>1000 Р.</dd>
+                <dd>1000&nbsp;Р.</dd>
               </div>
             </dl>
           </div>
@@ -142,12 +148,12 @@
           </a>
           <div class="catalog__wrapper">
             <a class="catalog__link" href="#">
-              <h3 class="catalog__link-title">Cat Energy PRO 500 г</h3>
+              <h3 class="catalog__link-title">Cat Energy PRO 500&nbsp;г</h3>
             </a>
             <dl class="catalog__text">
               <div class="catalog__text-weight">
                 <dt>Масса</dt>
-                <dd>700 г</dd>
+                <dd>700&nbsp;г</dd>
               </div>
               <div class="catalog__text-taste">
                 <dt>Вкус</dt>
@@ -155,7 +161,7 @@
               </div>
               <div class="catalog__text-price">
                 <dt>Цена</dt>
-                <dd>700 Р.</dd>
+                <dd>1700&nbsp;Р.</dd>
               </div>
             </dl>
           </div>
@@ -179,12 +185,12 @@
           </a>
           <div class="catalog__wrapper">
             <a class="catalog__link" href="#">
-              <h3 class="catalog__link-title">Cat Energy PRO 1000 г</h3>
+              <h3 class="catalog__link-title">Cat Energy PRO 1000&nbsp;г</h3>
             </a>
             <dl class="catalog__text">
               <div class="catalog__text-weight">
                 <dt>Масса</dt>
-                <dd>1000 г</dd>
+                <dd>1000&nbsp;г</dd>
               </div>
               <div class="catalog__text-taste">
                 <dt>Вкус</dt>
@@ -192,7 +198,7 @@
               </div>
               <div class="catalog__text-price">
                 <dt>Цена</dt>
-                <dd>1000 Р.</dd>
+                <dd>1000&nbsp;Р.</dd>
               </div>
             </dl>
           </div>
@@ -219,12 +225,12 @@
           </a>
           <div class="catalog__wrapper">
             <a class="catalog__link" href="#">
-              <h3 class="catalog__link-title">Cat Energy SLIM 500 г</h3>
+              <h3 class="catalog__link-title">Cat Energy SLIM 500&nbsp;г</h3>
             </a>
             <dl class="catalog__text">
               <div class="catalog__text-weight">
                 <dt>Масса</dt>
-                <dd>500 г</dd>
+                <dd>500&nbsp;г</dd>
               </div>
               <div class="catalog__text-taste">
                 <dt>Вкус</dt>
@@ -232,7 +238,7 @@
               </div>
               <div class="catalog__text-price">
                 <dt>Цена</dt>
-                <dd>400 Р.</dd>
+                <dd>400&nbspР.</dd>
               </div>
             </dl>
           </div>
@@ -258,12 +264,12 @@
           </a>
           <div class="catalog__wrapper">
             <a class="catalog__link" href="#">
-              <h3 class="catalog__link-title">Cat Energy SLIM 1000 г</h3>
+              <h3 class="catalog__link-title">Cat Energy SLIM 1000&nbsp;г</h3>
             </a>
             <dl class="catalog__text">
               <div class="catalog__text-weight">
                 <dt>Масса</dt>
-                <dd>1000 г</dd>
+                <dd>1000&nbsp;г</dd>
               </div>
               <div class="catalog__text-taste">
                 <dt>Вкус</dt>
@@ -271,7 +277,7 @@
               </div>
               <div class="catalog__text-price">
                 <dt>Цена</dt>
-                <dd>700 Р.</dd>
+                <dd>700&nbsp;Р.</dd>
               </div>
             </dl>
           </div>
@@ -296,12 +302,12 @@
           </a>
           <div class="catalog__wrapper">
             <a class="catalog__link" href="#">
-              <h3 class="catalog__link-title">Cat Energy SLIM 500 г</h3>
+              <h3 class="catalog__link-title">Cat Energy SLIM 500&nbsp;г</h3>
             </a>
             <dl class="catalog__text">
               <div class="catalog__text-weight">
                 <dt>Масса</dt>
-                <dd>500 г</dd>
+                <dd>500&nbsp;г</dd>
               </div>
               <div class="catalog__text-taste">
                 <dt>Вкус</dt>
@@ -309,7 +315,7 @@
               </div>
               <div class="catalog__text-price">
                 <dt>Цена</dt>
-                <dd>500 Р.</dd>
+                <dd>500&nbsp;Р.</dd>
               </div>
             </dl>
           </div>
@@ -323,8 +329,10 @@
               <line x1="60" y1="31" y2="31" stroke="#D3D3D3" stroke-width="2" />
             </svg>
           </span>
-          <span class="catalog__link-title catalog__link-title--show-more">Показать еще 100500 товаров</span>
-          <span class=" catalog__text catalog__text--show-more">На самом деле вкусов гораздо больше!</span>
+          <div class="catalog__icon-show-more-wrapper">
+            <span class="catalog__link-title catalog__link-title--show-more">Показать еще 100500 товаров</span>
+            <span class=" catalog__text catalog__text--show-more">На самом деле вкусов гораздо больше!</span>
+          </div clas>
           <a href="#" class="catalog__button button button--grey">Показать все</a>
         </li>
       </ul>
@@ -363,7 +371,7 @@
             <h3 class="products__name">Молоко</h3>
             <dl class="products__value">
               <dt>1 литр</dt>
-              <dd>100 Р.</dd>
+              <dd>100&nbsp;Р.</dd>
             </dl>
             <a class="products__button button" href="#">Заказать</a>
           </div>
@@ -383,9 +391,7 @@
     </section>
 
     <div class="products__present present">
-      <p class="present__text">
-        <span class="present__text--icon">Закажите все и&nbsp;получите чехол для кота в подарок!</span>
-      </p>
+      <p class="present__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
     </div>
 
     <section class="contacts">
@@ -436,13 +442,10 @@
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
             aria-label="Мы в фейсбуке!">
-            <svg width="15" height="29" viewBox="0 0 15 29" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 13 20" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M14 0.75H10.5C8.95292 0.75 7.46919 1.46024 6.37523 2.72447C5.28127 3.98871 4.66669 5.70337 4.66669 7.49127V11.536H1.16669V16.929H4.66669V27.7151H9.33335V16.929H12.8334L14 11.536H9.33335V7.49127C9.33335 7.13369 9.45627 6.79076 9.67506 6.53791C9.89386 6.28506 10.1906 6.14302 10.5 6.14302H14V0.75Z"
-                stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+                d="M11.5 0.833252H8.75002C7.53445 0.833252 6.36866 1.30674 5.50911 2.14957C4.64957 2.99239 4.16669 4.1355 4.16669 5.32743V8.02394H1.41669V11.6193H4.16669V18.81H7.83335V11.6193H10.5834L11.5 8.02394H7.83335V5.32743C7.83335 5.08905 7.92993 4.86042 8.10184 4.69186C8.27375 4.52329 8.50691 4.4286 8.75002 4.4286H11.5V0.833252Z" />
             </svg>
-
-
           </a>
         </li>
       </ul>

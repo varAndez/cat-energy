@@ -1,6 +1,13 @@
 .contacts {
   position: relative;
+
+  @media (min-width: $desktop) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 110px;
+  }
 }
+
 
 .contacts__wrapper {
   display: flex;
@@ -20,9 +27,7 @@
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
     top: 0;
-    left: 40px;
     z-index: 1;
 
     width: 100%;
@@ -30,7 +35,6 @@
     padding: 62px 82px 51px 76px;
 
     background: $color-white;
-    transform: translateY(50%);
   }
 }
 
@@ -81,21 +85,26 @@
 
 .contacts__map {
   width: 100%;
-  height: 362px;
+  height: 320px;
 
   background-image: url("../img/location.jpg");
 
   @media (min-width: $tablet) {
-    height: 400px;
-
     background-image: url("../img/location-tablet.jpg");
+    height: 400px;
   }
 
   @media (min-width: $desktop) {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
 
-    height: 400px;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
 
     background-image: url("../img/location-desktop.jpg");
+    transform: translateX(-50%);
   }
 }

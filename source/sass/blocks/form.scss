@@ -1,5 +1,4 @@
 .form {
-  overflow-x: hidden;
   margin-bottom: 60px;
 
   @media (min-width: $tablet) {
@@ -30,8 +29,9 @@
     @media (min-width: $desktop) {
       display: inline-block;
       width: 47%;
-      justify-items: flex-end;
       margin-left: 64px;
+
+      justify-items: flex-end;
     }
   }
 }
@@ -55,6 +55,10 @@
     line-height: 60px;
 
     border: none;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 74px;
   }
 }
 
@@ -220,12 +224,18 @@
   }
 }
 
+
 .form__input,
 .form__response {
   padding-right: 12px;
   padding-left: 12px;
 
   border: 1px solid $color-very-light-grey;
+
+  ~ svg {
+    fill: none;
+    stroke: $color-black;
+  }
 
   &:hover {
     border: 1px solid $color-very-light-grey;
@@ -236,7 +246,7 @@
     outline: 2px solid $color-charcoal;
 
     ~ svg {
-      fill: $color-apple;
+      stroke: $color-apple;
     }
   }
 
@@ -248,7 +258,14 @@
     outline: 2px solid $color-light-coral;
 
     ~ svg {
-      fill: $color-light-coral;
+      stroke: $color-light-coral;
+    }
+  }
+
+  &--phone {
+    ~ svg {
+      fill: $color-black;
+      stroke: none;
     }
   }
 }
