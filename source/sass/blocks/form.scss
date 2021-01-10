@@ -37,8 +37,11 @@
 }
 
 .form__title {
+  width: 100vw;
   margin: 0;
+  margin-left: -20px;
   padding-top: 27px;
+  padding-left: 20px;
 
   font-weight: 400;
   font-size: 36px;
@@ -49,6 +52,7 @@
   border-top: 1px solid $color-gainsboro;
 
   @media (min-width: $tablet) {
+    margin: 0;
     padding: 0;
 
     font-size: 60px;
@@ -65,7 +69,6 @@
 .form__subtitle {
   margin: 0;
   padding-top: 37px;
-  padding-bottom: 39px;
 
   font-weight: 400;
   font-size: 14px;
@@ -84,16 +87,35 @@
 }
 
 .form__list {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  padding-top: 24px;
-  padding-bottom: 10px;
+  padding: 0;
 
-  border-bottom: 1px solid $color-gainsboro;
+  list-style: none;
 
-  @include list-reset;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 1px;
+    margin-left: -20px;
+
+    border-bottom: 1px solid $color-gainsboro;
+
+    @media (min-width: $tablet) {
+      border: none;
+    }
+  }
+
 
   @media (min-width: $tablet) {
+    margin: 0;
+
     border: none;
   }
 
@@ -109,10 +131,15 @@
     @media (min-width: $desktop) {
       flex-direction: row;
       justify-content: space-between;
+      align-items: baseline;
     }
   }
 
   &--other {
+    &::before {
+      display: none;
+    }
+
     @media (min-width: $tablet) {
       display: flex;
       flex-direction: row;
@@ -124,7 +151,6 @@
 .form__item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
 
 
   &:last-child {
@@ -233,8 +259,7 @@
   border: 1px solid $color-very-light-grey;
 
   ~ svg {
-    fill: none;
-    stroke: $color-black;
+    color: $color-black;
   }
 
   &:hover {
@@ -246,7 +271,7 @@
     outline: 2px solid $color-charcoal;
 
     ~ svg {
-      stroke: $color-apple;
+      color: $color-apple;
     }
   }
 
@@ -258,14 +283,7 @@
     outline: 2px solid $color-light-coral;
 
     ~ svg {
-      stroke: $color-light-coral;
-    }
-  }
-
-  &--phone {
-    ~ svg {
-      fill: $color-black;
-      stroke: none;
+      color: $color-light-coral;
     }
   }
 }
@@ -394,7 +412,7 @@
   &::before {
     content: "";
 
-    background: url("../img/icon_checkbox.svg") no-repeat;
+    background: url("../img/background/icon_checkbox.svg") no-repeat;
     background-position: 4px 6px;
     background-size: 21px 16px;
   }

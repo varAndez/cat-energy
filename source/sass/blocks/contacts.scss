@@ -10,6 +10,9 @@
 
 
 .contacts__wrapper {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,24 +90,25 @@
   width: 100%;
   height: 320px;
 
-  background-image: url("../img/location.jpg");
+  background-image: url("../img/background/location.jpg");
+  background-repeat: round;
 
   @media (min-width: $tablet) {
-    background-image: url("../img/location-tablet.jpg");
     height: 400px;
+
+    background-image: url("../img/background/location-tablet.jpg");
   }
 
   @media (min-width: $desktop) {
     position: absolute;
     top: 0;
     left: 50%;
-    z-index: -1;
 
     width: 100vw;
     height: 100%;
     overflow: hidden;
 
-    background-image: url("../img/location-desktop.jpg");
+    background-image: url("../img/background/location-desktop.jpg");
     transform: translateX(-50%);
   }
 }

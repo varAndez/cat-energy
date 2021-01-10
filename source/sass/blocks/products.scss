@@ -1,12 +1,15 @@
 .products {
   @media (min-width: $desktop) {
-    display: inline-block;
-    width: 80%;
     padding-right: 79px;
     margin-bottom: 86px;
   }
 }
 
+.products__content {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
 
 .products__list {
   display: flex;
@@ -15,6 +18,11 @@
   padding: 0;
 
   @include list-reset;
+
+  @media (min-width: $desktop) {
+    width: 72%;
+    margin-right: 6%;
+  }
 }
 
 .products__item {
@@ -35,8 +43,8 @@
 
   @media (min-width: $desktop) {
     padding: 0;
-    padding-top: 15px;
-    padding-bottom: 17px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
     border: none;
     border-top: 1px solid $color-very-light-grey;

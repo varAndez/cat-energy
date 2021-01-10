@@ -8,11 +8,24 @@
 }
 
 .page-header__container--index {
+  position: relative;
+
   @media (min-width: $desktop) {
-    background-image: url("../img/background-desktop.png");
+    background-image: url("../img/background/background-desktop.png");
     background-repeat: no-repeat;
     background-position: 100% 0;
     min-height: 696px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      background-color: $color-apple;
+      width: 50vw;
+      height: 100%;
+      z-index: -1;
+    }
   }
 }
 
@@ -53,7 +66,7 @@
 
   @media (min-width: $tablet) {
     margin-right: 95px;
-    padding-bottom: 0;
+    padding-bottom: 10px;
   }
 }
 
@@ -62,5 +75,12 @@
 
   @media (min-width: $tablet) {
     padding-left: 0;
+  }
+}
+
+.page-header__nav {
+  @media (min-width: $desktop) {
+    width: 50%;
+    padding-left: 100px;
   }
 }

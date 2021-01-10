@@ -18,6 +18,10 @@
   padding-top: 39px;
   padding-bottom: 32px;
 
+  &.is-main {
+    pointer-events: none;
+  }
+
   @media (min-width: $tablet) {
     padding-top: 0;
     padding-bottom: 0;

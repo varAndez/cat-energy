@@ -1,12 +1,28 @@
 .present {
+  position: relative;
+
   width: 280px;
+  height: 100%;
   min-height: 289px;
   margin: 0 auto;
   margin-top: 39px;
   margin-bottom: 35px;
-  position: relative;
 
-  background: no-repeat url("../img/present-backgound.png");
+  background: no-repeat url("../img/background/present-backgound.png");
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $color-apple;
+  }
+
 
   @media (min-width: $tablet) {
     width: 708px;
@@ -14,7 +30,7 @@
     margin-top: 69px;
     padding: 0;
 
-    background: no-repeat url("../img/present-backgound-tablet.png");
+    background: no-repeat url("../img/background/present-backgound-tablet.png");
   }
 
   @media (min-width: $desktop) {
@@ -24,7 +40,7 @@
     margin: 0;
     padding: 0;
 
-    background: no-repeat url("../img/present-backgound.png");
+    background: no-repeat url("../img/background/present-backgound.png");
   }
 
   &::before {
@@ -36,14 +52,14 @@
     width: 78px;
     height: 80px;
 
-    background-image: url("../img/present-box.svg");
+    background-image: url("../img/background/present-box.svg");
     transform: translateX(-50%);
 
     @media (min-width: $tablet) {
-      left: 78px;
+      left: 15%;
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       top: 58px;
       left: 50%;
 

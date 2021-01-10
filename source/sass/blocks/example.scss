@@ -1,20 +1,33 @@
 .example {
+  background-color: $color-whisper;
+
+  @media (min-width: $tablet) {
+    background-color: $color-white;
+  }
+
   @media (min-width: $desktop) {
-    margin: 0 auto;
+    background: linear-gradient(to right, $color-white-smoke 80%, $color-whisper 20%);
   }
 }
 
-.example__wrapper {
+.example__header {
+  @media (min-width: $desktop) {
+    width: 100%;
+
+    background-color: $color-white;
+  }
+}
+
+.example__content {
   margin: 0 auto;
 
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 0 110px;
   }
 }
 
@@ -31,21 +44,18 @@
   font-family: $font-family--second;
   color: $color-black;
 
-  background-color: $color-whisper;
-
   @media (min-width: $tablet) {
     padding-right: 30px;
     padding-left: 30px;
 
     font-size: 60px;
     line-height: 60px;
-
-    background-color: $color-white;
   }
 
   @media (min-width: $desktop) {
-    width: 100%;
-    padding: 0;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
     padding-bottom: 76px;
   }
 }
@@ -54,13 +64,9 @@
   padding-right: 20px;
   padding-left: 20px;
 
-  background-color: $color-whisper;
-
   @media (min-width: $tablet) {
     padding-right: 30px;
     padding-left: 30px;
-
-    background-color: $color-white;
   }
 
   @media (min-width: $desktop) {
@@ -69,8 +75,6 @@
     padding-top: 70px;
     padding-right: 175px;
     padding-bottom: 75px;
-
-    background-color: $color-whisper;
   }
 }
 
@@ -225,10 +229,25 @@
 
 
 .example__compare {
+  position: relative;
+
   background-color: $color-whisper;
 
   @media (min-width: $tablet) {
     min-height: 394px;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      height: 100%;
+
+      background: linear-gradient(to right, $color-white-smoke 50%, $color-whisper 50%);
+    }
   }
 
   @media (min-width: $desktop) {
@@ -245,18 +264,21 @@
   margin: 0 auto;
   margin-bottom: 23px;
 
-  &--before,
-  &--after {
+  &--before {
     position: absolute;
 
     width: 311px;
     height: 232px;
 
     @media (min-width: $tablet) {
-      width: 690px;
-      height: 536px;
+      width: 708px;
+      height: 620px;
 
       transform: translateY(-200px);
+    }
+
+    @media (min-width: $desktop) {
+      width: 727px;
     }
   }
 
@@ -281,6 +303,7 @@
 
     @media (min-width: $tablet) {
       bottom: 64px;
+      z-index: 1;
 
       width: 428px;
       padding: 0;
@@ -346,6 +369,8 @@
 }
 
 .example__button {
+  z-index: 1;
+
   padding: 0;
 
   font-size: 16px;

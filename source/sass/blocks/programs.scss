@@ -106,7 +106,7 @@
 .programs__title {
   margin: 0;
   padding-left: 10px;
-
+  align-self: center;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -121,6 +121,10 @@
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    align-self: baseline;
   }
 }
 

@@ -1,10 +1,12 @@
 .social {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: center;
 
   border-top: 1px solid $color-gainsboro;
   border-bottom: 1px solid $color-gainsboro;
+
+  gap: 5px;
+  grid-template-columns: repeat(3, 50px);
 
   @include list-reset;
 
@@ -15,22 +17,14 @@
 
 .social__item {
   display: flex;
-  margin-right: 16px;
+  justify-content: center;
   padding-top: 11px;
   padding-bottom: 11px;
 
-  &:last-child {
-    margin-right: 0;
-  }
 
   @media (min-width: $tablet) {
-    margin-right: 27px;
     padding-top: 0;
     padding-bottom: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
@@ -40,6 +34,17 @@
   align-items: center;
   width: 40px;
   height: 40px;
+
+  color: $color-charcoal;
+
+  &:hover,
+  &:focus {
+    color: $color-apple;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--vk {
     svg {
@@ -105,16 +110,6 @@
       margin-left: 22px;
     }
   }
-}
-
-
-// Изменение состояний при наведении
-
-.social__text,
-.social__link {
-  svg {
-    fill: $color-charcoal;
-  }
 
   &:hover,
   &:focus {
@@ -125,9 +120,5 @@
 
   &:active {
     opacity: 0.3;
-
-    svg {
-      fill: $color-apple;
-    }
   }
 }
