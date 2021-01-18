@@ -1,12 +1,12 @@
 .form {
-  margin-bottom: 60px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 72px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 82px;
+    margin-bottom: 89px;
   }
 }
 
@@ -14,27 +14,49 @@
   display: flex;
   flex-direction: column;
 
+
+  @media (min-width: $desktop) {
+    display: inline-block;
+    width: 50%;
+  }
+
   &--data {
     @media (min-width: $desktop) {
-      display: inline-block;
-      width: 47%;
+      width: 46%;
     }
   }
 
+
   &--programs {
     @media (min-width: $tablet) {
+      margin-top: 90px;
+      margin-right: 34px;
+      margin-bottom: 6px;
+      margin-left: 42px;
+
       border: 1px solid $color-whisper-border;
     }
 
     @media (min-width: $desktop) {
       display: inline-block;
-      width: 47%;
-      margin-left: 64px;
+      width: 46%;
+      margin: 0;
+      margin-left: 77px;
 
       justify-items: flex-end;
     }
   }
+
+  &--additional,
+  &--comment,
+  &--contact {
+    @media (min-width: $desktop) {
+      width: 100%;
+      margin: 0;
+    }
+  }
 }
+
 
 .form__title {
   width: 100vw;
@@ -53,6 +75,7 @@
 
   @media (min-width: $tablet) {
     margin: 0;
+    margin-left: 39px;
     padding: 0;
 
     font-size: 60px;
@@ -62,12 +85,15 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 74px;
+    margin: 0;
+    margin-top: 63px;
   }
 }
 
 .form__subtitle {
+  width: 90%;
   margin: 0;
+  margin-bottom: 15px;
   padding-top: 37px;
 
   font-weight: 400;
@@ -78,11 +104,18 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    width: 50%;
+    margin-left: 41px;
     padding-top: 54px;
-    padding-bottom: 66px;
+    padding-bottom: 36px;
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 27%;
+    margin-left: 0;
   }
 }
 
@@ -108,26 +141,56 @@
     border-bottom: 1px solid $color-gainsboro;
 
     @media (min-width: $tablet) {
-      border: none;
+      content: none;
     }
   }
 
 
   @media (min-width: $tablet) {
     margin: 0;
+    padding-right: 30px;
+    padding-left: 42px;
 
     border: none;
   }
 
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
+
+  &--data {
+    margin-bottom: 1px;
+  }
+
 
   &--programs {
+    min-height: 139px;
+    margin-bottom: 1px;
+
     @media (min-width: $tablet) {
+      margin-top: 13px;
+      margin-bottom: -12px;
       padding-right: 28px;
       padding-left: 28px;
+    }
+
+    @media (min-width: $tablet) {
+      margin: 0;
     }
   }
 
   &--contact {
+    margin-bottom: 0;
+
+    &::before {
+      border-bottom: none;
+    }
+
+
+    @media (min-width: $tablet) {
+      border: none;
+    }
+
     @media (min-width: $desktop) {
       flex-direction: row;
       justify-content: space-between;
@@ -136,6 +199,8 @@
   }
 
   &--other {
+    margin-bottom: 0;
+
     &::before {
       display: none;
     }
@@ -155,6 +220,20 @@
 
   &:last-child {
     margin-bottom: 24px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+
+  &--contact {
+    @media (min-width: $desktop) {
+      width: 46%;
+    }
   }
 
   &--other {
@@ -166,13 +245,8 @@
       width: 25%;
     }
   }
-
-  &--contact {
-    @media (min-width: $desktop) {
-      width: 47%;
-    }
-  }
 }
+
 
 .form__caption {
   position: relative;
@@ -180,7 +254,7 @@
   display: inline-flex;
   width: fit-content;
   margin: 0;
-  margin-top: 26px;
+  margin-top: 24px;
   margin-bottom: 21px;
 
   font-weight: 400;
@@ -188,6 +262,79 @@
   line-height: 26px;
   font-family: $font-family--second;
   color: $color-black;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      left: 10px;
+
+      background-color: $color-apple;
+      transform: translateX(-100%);
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+
+    &::before {
+      left: -30px;
+    }
+  }
+
+
+  &--contact {
+    margin-top: 27px;
+    margin-bottom: 8px;
+
+    @media (min-width: $tablet) {
+      margin-top: 76px;
+      margin-bottom: 66px;
+      padding-right: 30px;
+      padding-left: 37px;
+
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 70px;
+      margin-bottom: 61px;
+      padding: 0;
+    }
+  }
+
+  &--comment {
+    margin: 0;
+    margin-bottom: 38px;
+
+    @media (min-width: $tablet) {
+      margin-top: 60px;
+      margin-bottom: 74px;
+      padding-right: 30px;
+      padding-left: 37px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 65px;
+      padding: 0;
+    }
+  }
+
+  &--additional {
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet) {
+      margin-top: 65px;
+      margin-bottom: 54px;
+      padding-left: 38px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-left: 0;
+    }
+  }
 
 
   &::after,
@@ -207,32 +354,18 @@
     background-color: $color-apple;
     transform: translateX(100%);
   }
-
-
-  @media (min-width: $tablet) {
-    margin-bottom: 76px;
-
-    font-size: 36px;
-    line-height: 36px;
-
-    &::before {
-      left: -20px;
-
-      background-color: $color-apple;
-      transform: translateX(-100%);
-    }
-  }
-
-  @media (min-width: $desktop) {
-    margin-bottom: 57px;
-  }
 }
 
 .form__response {
   min-height: 150px;
 
   @media (min-width: $tablet) {
+    width: 95%;
     min-height: 174px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
   }
 }
 
@@ -307,7 +440,7 @@
   text-transform: uppercase;
 
   span {
-    margin-right: 20px;
+    margin-right: 15px;
   }
 
   input {
@@ -324,8 +457,13 @@
 .form__label {
   position: relative;
 
+  padding-top: 9px;
+  padding-bottom: 2px;
+
 
   &--radio {
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 45px;
 
     color: $color-nero;
@@ -343,15 +481,28 @@
       border: 1px solid $color-very-light-grey;
       border-radius: 50%;
       transform: translateY(-50%);
+
+      @media (min-width: $tablet) {
+        width: 40px;
+        height: 40px;
+      }
     }
 
     @media (min-width: $tablet) {
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-left: 56px;
+    }
+
+    @media (min-width: $desktop) {
       padding-top: 18px;
       padding-bottom: 18px;
     }
   }
 
   &--checkbox {
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 45px;
 
     color: $color-nero;
@@ -405,6 +556,13 @@
     background-color: $color-apple;
     border-radius: 50%;
     transform: translateY(-50%);
+
+    @media (min-width: $tablet) {
+      left: 11px;
+
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 
@@ -437,6 +595,7 @@
   }
 
   @media (min-width: $desktop) {
+    width: 25%;
     padding-bottom: 0;
   }
 }
@@ -449,8 +608,21 @@ textarea {
 .form__button {
   width: 100%;
 
+  font-size: 16px;
+  line-height: 18px;
+
   @media (min-width: $tablet) {
     display: inline-block;
-    width: 45%;
+    width: 40%;
+    margin-top: 68px;
+    margin-left: 41px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 47%;
+    margin: 0;
+    margin-top: 56px;
   }
 }

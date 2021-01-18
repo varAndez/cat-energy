@@ -45,11 +45,28 @@
   color: $color-black;
 
   @media (min-width: $tablet) {
+    position: relative;
+
+    padding: 0;
+    padding-top: 44px;
     padding-right: 30px;
+    padding-bottom: 62px;
     padding-left: 30px;
 
     font-size: 60px;
     line-height: 60px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100vw;
+      height: 1px;
+
+      border-top: 1px solid $color-gainsboro;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -57,6 +74,10 @@
     margin: 0 auto;
     padding: 0 110px;
     padding-bottom: 76px;
+
+    &::after {
+      border: none;
+    }
   }
 }
 
@@ -70,10 +91,10 @@
   }
 
   @media (min-width: $desktop) {
-    width: 50%;
+    width: 54%;
     padding: 0;
-    padding-top: 70px;
-    padding-right: 175px;
+    padding-top: 71px;
+    padding-right: 190px;
     padding-bottom: 75px;
   }
 }
@@ -87,10 +108,15 @@
 
   @media (min-width: $tablet) {
     padding: 0;
+    padding-right: 4px;
     padding-bottom: 54px;
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 67px;
   }
 }
 
@@ -113,6 +139,11 @@
   justify-content: center;
 
   @include list-reset;
+
+  @media (min-width: $desktop) {
+    justify-content: space-between;
+    width: 369px;
+  }
 }
 
 .example__item {
@@ -131,7 +162,7 @@
   }
 
   @media (min-width: $tablet) {
-    width: 164px;
+    width: 168px;
   }
 }
 
@@ -141,8 +172,8 @@
   margin: 0;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 24px;
   font-family: $font-family--second;
   color: $color-black;
   text-transform: uppercase;
@@ -160,7 +191,7 @@
 .example__attribute {
   position: absolute;
   right: 0;
-  bottom: -14px;
+  bottom: -16px;
   left: 0;
 
   width: min-content;
@@ -189,6 +220,8 @@
   }
 
   @media (min-width: $desktop) {
+    bottom: -9px;
+
     background-color: $color-whisper;
   }
 }
@@ -198,8 +231,8 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 34px;
-  padding-bottom: 42px;
+  padding-top: 33px;
+  padding-bottom: 0;
 
   font-weight: 400;
   font-size: 14px;
@@ -219,11 +252,20 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    dd {
+      margin-top: 10px;
+    }
   }
 
   @media (min-width: $desktop) {
     flex-direction: row;
-    padding-top: 55px;
+    justify-content: flex-start;
+    padding-top: 53px;
+
+    dd {
+      margin-left: 64px;
+    }
   }
 }
 
@@ -251,7 +293,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 50%;
+    width: 45%;
   }
 }
 
@@ -261,8 +303,8 @@
   display: flex;
   justify-content: center;
   min-height: 232px;
-  margin: 0 auto;
-  margin-bottom: 23px;
+  margin: 42px auto 32px;
+
 
   &--before {
     position: absolute;
@@ -292,7 +334,7 @@
 .example__range {
   display: flex;
   justify-content: center;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
 
   input {
     width: 84px;
@@ -365,6 +407,11 @@
 
   @media (min-width: $tablet) {
     padding-top: 358px;
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 363px;
   }
 }
 
@@ -381,12 +428,22 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $color-black;
+  }
 }
 
 .example__button--before {
-  margin-right: 13px;
+  margin-right: 18px;
 }
 
 .example__button--after {
-  margin-left: 13px;
+  margin-left: 16px;
+
+  @media (min-width: $tablet) {
+    margin-left: 26px;
+  }
 }

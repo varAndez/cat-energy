@@ -62,7 +62,7 @@
       @media (min-width: $tablet) {
         display: grid;
 
-        grid-gap: 20px 40px;
+        grid-gap: 20px 36px;
         grid-template-columns: repeat(3, max-content);
       }
     }
@@ -76,7 +76,7 @@
   z-index: 2;
 
   width: 65px;
-  padding: 30px;
+  padding: 33px;
 
   background-color: #ffffff;
   border: none;
@@ -95,15 +95,19 @@
   @media (min-width: $tablet) {
     display: grid;
 
-    grid-gap: 20px 40px;
+    grid-gap: 20px 36px;
     grid-template-columns: repeat(3, max-content);
+  }
+
+  @media (min-width: $desktop) {
+    grid-gap: 28px 34px;
   }
 }
 
 .main-nav__item {
   display: flex;
   justify-content: center;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 24px;
 
   border-top: 1px solid $color-whisper-border;
@@ -162,6 +166,9 @@
 
   @media (min-width: $desktop) {
     padding-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 30px;
 
     &--index {
       color: $color-white;
