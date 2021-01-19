@@ -55,57 +55,56 @@
       <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru" method="post">
 
+        <div class="form__fieldset__wrapper-desktop">
+          <div class="form__fieldset form__fieldset--data">
+            <ul class="form__list form__list--data">
+              <li class="form__item">
+                <label class="form__label">
+                  <span>Имя:*</span>
+                  <input class="form__input" type="text" name="cat-name" placeholder="Барсик" required />
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">
+                  <span>Вес&nbsp;(кг):*</span>
+                  <input class="form__input" type="text" name="cat-weight" placeholder="7" />
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">
+                  <span>Возвраст&nbsp;(лет):</span>
+                  <input class="form__input" type="text" name="cat-age" placeholder="7" />
+                </label>
+              </li>
+            </ul>
+          </div>
 
 
-        <!-- Указываем имя, вес и возраст кота-->
-        <div class="form__fieldset form__fieldset--data">
-          <ul class="form__list form__list--data">
-            <li class="form__item">
-              <label class="form__label">
-                <span>Имя:*</span>
-                <input class="form__input" type="text" name="cat-name" placeholder="Барсик" required />
-              </label>
-            </li>
-            <li class="form__item">
-              <label class="form__label">
-                <span>Вес&nbsp;(кг):*</span>
-                <input class="form__input" type="text" name="cat-weight" placeholder="7" />
-              </label>
-            </li>
-            <li class="form__item">
-              <label class="form__label">
-                <span>Возвраст&nbsp;(лет):</span>
-                <input class="form__input" type="text" name="cat-age" placeholder="7" />
-              </label>
-            </li>
-          </ul>
+          <div class="form__fieldset form__fieldset--programs">
+            <ul class="form__list form__list--programs">
+              <li class="form__item">
+                <input class="form__input--radio visually-hidden" type="radio" name="program" value="slimming"
+                  id="form-slimming" checked />
+                <label class="form__label form__label--radio" for="form-slimming">Похудение</label>
+              </li>
+
+              <li class="form__item">
+                <input class="form__input--radio visually-hidden" type="radio" name="program" value="weight-gain"
+                  id="form-weight-gain" />
+                <label class="form__label form__label--radio" for="form-weight-gain">Набор массы</label>
+              </li>
+
+              <li class="form__item">
+                <input class="form__input--radio visually-hidden" type="radio" name="program" value="advice"
+                  id="form-advice" />
+                <label class="form__label form__label--radio" for="form-advice">Не знаю (Нужен ваш
+                  совет)</label>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Выбираем программу: похудение или набор массы, так же можем помочь советом.-->
-        <div class="form__fieldset form__fieldset--programs">
-          <ul class="form__list form__list--programs">
-            <li class="form__item">
-              <input class="form__input--radio visually-hidden" type="radio" name="program" value="slimming"
-                id="form-slimming" checked />
-              <label class="form__label form__label--radio" for="form-slimming">Похудение</label>
-            </li>
 
-            <li class="form__item">
-              <input class="form__input--radio visually-hidden" type="radio" name="program" value="weight-gain"
-                id="form-weight-gain" />
-              <label class="form__label form__label--radio" for="form-weight-gain">Набор массы</label>
-            </li>
-
-            <li class="form__item">
-              <input class="form__input--radio visually-hidden" type="radio" name="program" value="advice"
-                id="form-advice" />
-              <label class="form__label form__label--radio" for="form-advice">Не знаю (Нужен ваш
-                совет)</label>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Указываем контактные данные-->
         <div class="form__fieldset form__fieldset--contact">
           <h2 class="form__caption form__caption--contact">Контактные данные (владельца кота)</h2>
           <ul class="form__list form__list--contact">
@@ -131,15 +130,14 @@
           </ul>
         </div>
 
-        <!-- Оставляем комментарий-->
+
         <div class="form__fieldset form__fieldset--comment">
           <h2 class="form__caption form__caption--comment">Комментарий</h2>
           <textarea class="form__response" name="cat-desc" placeholder="Расскажите обо всех повадках кота"
-            aria-label="Расскажите о вашем коте.">
-          </textarea>
+            aria-label="Расскажите о вашем коте."></textarea>
         </div>
 
-        <!-- Дополнительные товары-->
+
         <div class="form__fieldset form__fieldset--additional">
           <h2 class="form__caption form__caption--additional">Дополнительно</h2>
           <ul class="form__list form__list--other">
@@ -169,14 +167,16 @@
             </li>
           </ul>
         </div>
-        <button class="form__button button" type="submit">Отправить заявку</button>
-        <p class="form__required-field">* — Обязательные поля</p>
+        <div class="form__wrapping">
+          <button class="form__button button" type="submit">Отправить заявку</button>
+          <p class="form__required-field">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
 
     <section class="contacts">
       <div class="contacts__wrapper contacts__wrapper--grey">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <address class="contacts__text">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span
             class="contacts__text--city">Санкт-Петербург</span></address>
       </div>

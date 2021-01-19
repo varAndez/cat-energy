@@ -18,7 +18,7 @@
 
   @media (min-width: $tablet) {
     padding-top: 45px;
-    padding-bottom: 72px;
+    padding-bottom: 151px;
 
     font-size: 60px;
     line-height: 60px;
@@ -26,46 +26,44 @@
 
   @media (min-width: $desktop) {
     padding-top: 71px;
+    padding-bottom: 72px;
   }
 }
 
 .instructions__list {
   display: grid;
 
-  grid-gap: 20px;
+  grid-gap: 25px;
   grid-template-columns: repeat(1, 1fr);
 
   @include list-reset;
 
   @media (min-width: $tablet) {
     list-style-type: none;
+    column-gap: 63px;
 
     counter-reset: number 0;
 
-    row-gap: 80px;
-    column-gap: 63px;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 150px;
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: repeat(4, 1fr);
     column-gap: 75px;
+    margin-top: 75px;
+
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .instructions__item {
+  position: relative;
+
   display: flex;
   align-items: center;
 
 
-  svg {
-    min-width: 60px;
-    min-height: 60px;
-  }
-
   @media (min-width: $tablet) {
-    position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -88,23 +86,16 @@
       font-family: $font-family--second;
       color: $color-white-smoke;
     }
-
-
-    svg {
-      width: 80px;
-      height: 80px;
-    }
   }
 }
-
 
 .instructions__text {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-
+  padding-left: 80px;
+  padding-top: 2px;
   font-family: $font-family--main;
   text-align: left;
 
@@ -118,17 +109,90 @@
   }
 }
 
-.instructions__item--sheet,
-.instructions__item--powder,
-.instructions__item--cutlery,
-.instructions__item--clock {
-  display: flex;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
+.instructions__item--sheet {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  @media (min-width: $tablet) {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/background/instructions-sheet.png");
+
+    @media (min-width: $tablet) {
+      top: -70px;
+      width: 80px;
+      height: 80px;
+
+      background-image: url("../img/background/instructions-sheet-tablet.png");
+    }
+  }
+}
+
+.instructions__item--powder {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/background/instructions-powder.png");
+
+    @media (min-width: $tablet) {
+      top: -70px;
+      width: 80px;
+      height: 80px;
+
+      background-image: url("../img/background/instructions-powder-tablet.png");
+    }
+  }
+}
+
+.instructions__item--cutlery {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/background/instructions-cutlery.png");
+
+    @media (min-width: $tablet) {
+      top: -70px;
+      width: 80px;
+      height: 80px;
+
+      background-image: url("../img/background/instructions-cutlery-tablet.png");
+    }
+  }
+}
+
+.instructions__item--clock {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/background/instructions-clock.png");
+
+    @media (min-width: $tablet) {
+      top: -70px;
+      width: 80px;
+      height: 80px;
+
+      background-image: url("../img/background/instructions-clock-tablet.png");
+    }
   }
 }
