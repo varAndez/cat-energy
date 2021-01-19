@@ -7,8 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 55px;
+    padding-top: 34px;
     padding-bottom: 61px;
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 36px;
   }
 }
 
@@ -17,6 +21,10 @@
   justify-content: center;
   padding-top: 39px;
   padding-bottom: 32px;
+
+  &.is-main {
+    pointer-events: none;
+  }
 
   @media (min-width: $tablet) {
     padding-top: 0;

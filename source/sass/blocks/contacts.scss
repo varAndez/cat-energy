@@ -1,15 +1,20 @@
 .contacts {
   position: relative;
 
+
   @media (min-width: $desktop) {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 110px;
+
+    padding: 93px 110px 103px 110px;
   }
 }
 
 
 .contacts__wrapper {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +28,7 @@
 
   @media (min-width: $tablet) {
     align-items: flex-start;
-    padding: 65px 72px 58px 71px;
+    padding: 63px 72px 57px 71px;
   }
 
   @media (min-width: $desktop) {
@@ -32,7 +37,7 @@
 
     width: 100%;
     max-width: 570px;
-    padding: 62px 82px 51px 76px;
+    padding: 66px 82px 58px 76px;
 
     background: $color-white;
   }
@@ -75,36 +80,43 @@
     &--city {
       display: block;
       margin-top: 19px;
-    }
-  }
 
-  @media (min-width: $tablet) {
-    text-align: left;
+      text-align: right;
+
+      @media (min-width: $desktop) {
+        text-align: left;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      text-align: left;
+    }
   }
 }
 
 .contacts__map {
   width: 100%;
-  height: 320px;
+  height: 362px;
 
-  background-image: url("../img/location.jpg");
+  background-image: url("../img/background/location.jpg");
+  background-repeat: round;
 
   @media (min-width: $tablet) {
-    background-image: url("../img/location-tablet.jpg");
     height: 400px;
+
+    background-image: url("../img/background/location-tablet.jpg");
   }
 
   @media (min-width: $desktop) {
     position: absolute;
     top: 0;
     left: 50%;
-    z-index: -1;
 
     width: 100vw;
     height: 100%;
     overflow: hidden;
 
-    background-image: url("../img/location-desktop.jpg");
+    background-image: url("../img/background/location-desktop.jpg");
     transform: translateX(-50%);
   }
 }

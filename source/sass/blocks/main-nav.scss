@@ -2,18 +2,12 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   &--closed {
     .main-nav__list {
       display: none;
 
       @media (min-width: $tablet) {
-        display: flex;
+        display: grid;
       }
     }
 
@@ -33,10 +27,6 @@
 
   &--opened {
     .main-nav__toggle {
-      top: 0;
-      right: 0;
-
-
       &::before,
       &::after {
         content: "";
@@ -61,13 +51,20 @@
     }
   }
 
-  &--nojs {
+  &--no-js {
     .main-nav__toggle {
       display: none;
     }
 
     .main-nav__list {
       display: block;
+
+      @media (min-width: $tablet) {
+        display: grid;
+
+        grid-gap: 20px 36px;
+        grid-template-columns: repeat(3, max-content);
+      }
     }
   }
 }
@@ -79,6 +76,7 @@
   z-index: 2;
 
   width: 65px;
+  padding: 33px;
 
   background-color: #ffffff;
   border: none;
@@ -95,15 +93,21 @@
   @include list-reset;
 
   @media (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-width: 440px;
+    display: grid;
+
+    grid-gap: 20px 36px;
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  @media (min-width: $desktop) {
+    grid-gap: 28px 34px;
   }
 }
 
 .main-nav__item {
-  padding-top: 22px;
+  display: flex;
+  justify-content: center;
+  padding-top: 21px;
   padding-bottom: 24px;
 
   border-top: 1px solid $color-whisper-border;
@@ -126,6 +130,8 @@
   text-decoration: none;
 
   @media (min-width: $tablet) {
+    padding-bottom: 10px;
+
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -142,10 +148,12 @@
     &--active {
       position: relative;
 
+      pointer-events: none;
+
       &::after {
         content: "";
         position: absolute;
-        bottom: -10px;
+        bottom: 0;
         left: 0;
 
         width: 100%;
@@ -157,6 +165,11 @@
   }
 
   @media (min-width: $desktop) {
+    padding-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 30px;
+
     &--index {
       color: $color-white;
     }

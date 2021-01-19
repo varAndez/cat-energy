@@ -5,7 +5,7 @@
   padding-top: 22px;
 
   @media (min-width: $desktop) {
-    margin-top: 82px;
+    margin-top: 60px;
   }
 }
 
@@ -21,11 +21,12 @@
 .programs__slimming {
   width: 50px;
   height: 53px;
+  margin-right: 21px;
 
   @media (min-width: $tablet) {
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 6%;
 
     width: 200px;
     height: 200px;
@@ -39,17 +40,21 @@
     align-self: center;
     width: 100px;
     height: 106px;
+
+    transform: translateY(-35%);
   }
 }
 
 .programs__weight-again {
   min-width: 67px;
   min-height: 50px;
+  margin-right: 4px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet) {
     position: absolute;
     top: 50%;
-    right: 2%;
+    right: 4%;
 
     width: 268px;
     height: 200px;
@@ -63,6 +68,8 @@
     align-self: center;
     width: 134px;
     height: 100px;
+
+    transform: translateY(-29%)  translateX(-13%);
   }
 }
 
@@ -81,7 +88,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  padding: 30px 33px 18px 20px;
+  padding: 25px 34px 20px 19px;
 
   background-color: $color-white-smoke;
 
@@ -93,19 +100,24 @@
     position: relative;
 
     margin-bottom: 30px;
-    padding: 77px 279px 53px 52px;
+    padding: 79px 313px 58px 52px;
+
+    &--slimming {
+      padding-right: 273px;
+    }
   }
 
   @media (min-width: $desktop) {
     margin: 0;
-    padding: 77px 51px 55px 52px;
+    padding: 77px 51px 59px 52px;
   }
 }
 
 
 .programs__title {
+  align-self: center;
   margin: 0;
-  padding-left: 10px;
+  padding: 0;
 
   font-weight: 400;
   font-size: 24px;
@@ -122,12 +134,17 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop) {
+    align-self: baseline;
+    width: 66%;
+  }
 }
 
 
 .programs__text {
   margin: 0;
-  padding-top: 29px;
+  padding-top: 20px;
   padding-bottom: 23px;
 
   font-weight: 400;
@@ -150,7 +167,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 0;
+    margin-top: 5px;
   }
 }
 
@@ -175,6 +192,13 @@
   @media (min-width: $tablet) {
     margin-top: 48px;
     padding: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 24px;
   }
 }
 
@@ -191,8 +215,14 @@
   display: flex;
   width: 32px;
   height: 12px;
-  margin-left: 10px;
+  margin-top: 3px;
+  margin-left: 18px;
   overflow: hidden;
+
+  @media (min-width: $tablet) {
+    margin-top: 11px;
+    margin-left: 28px;
+  }
 
 
   svg {
