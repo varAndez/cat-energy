@@ -1,6 +1,10 @@
 .instructions {
   padding-bottom: 42px;
 
+  @media (min-width: $tablet) {
+    padding-bottom: 50px;
+  }
+
   @media (min-width: $desktop) {
     padding-bottom: 68px;
   }
