@@ -300,12 +300,8 @@
   }
 
   @media (min-width: $desktop) {
-    width: 62%;
-
-    &--grey {
-      width: 73%;
-      left: 49%;
-    }
+    width: 67%;
+    padding: 10px;
   }
 }
 
