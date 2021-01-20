@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 19px;
+  padding: 26px 19px;
 
   background-color: $color-white;
 
@@ -49,14 +49,14 @@
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 21px;
   font-family: $font-family--second;
   color: $color-black-second;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
   }
 }
 

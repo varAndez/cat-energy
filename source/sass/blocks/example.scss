@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop) {
-    background: linear-gradient(to right, $color-white-smoke 80%, $color-whisper 20%);
+    background: linear-gradient(to right, $color-white-smoke 60%, $color-whisper 40%);
   }
 }
 
@@ -50,7 +50,7 @@
     padding: 0;
     padding-top: 44px;
     padding-right: 30px;
-    padding-bottom: 62px;
+    padding-bottom: 67px;
     padding-left: 30px;
 
     font-size: 60px;
@@ -108,14 +108,15 @@
 
   @media (min-width: $tablet) {
     padding: 0;
-    padding-right: 4px;
+    padding-right: 10px;
     padding-bottom: 54px;
 
     font-size: 16px;
     line-height: 24px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
+    padding-right: 4px;
     padding-bottom: 67px;
   }
 }
@@ -432,6 +433,7 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
+
     border-bottom: 1px dotted $color-black;
   }
 }

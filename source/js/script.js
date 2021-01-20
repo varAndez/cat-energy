@@ -22,7 +22,7 @@ function initMap() {
 
   var uluru = { lat: 59.939033513366084, lng: 30.32128792141334 };
   var markerPos = { lat: 59.938753982836836, lng: 30.32304743616715 };
-  var markerIcon = './img/map-pin.png';
+  var markerIcon = './img/content/map-pin.png';
 
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 16,
