@@ -3,6 +3,7 @@
     ".git/**",
     "node_modules/**"
   ],
+
   "always-semicolon": true,
   "block-indent": "  ",
   "color-case": "lower",

@@ -1,12 +1,12 @@
 .instructions {
-  padding-bottom: 42px;
+  padding-bottom: 51px;
 
   @media (min-width: $tablet) {
-    padding-bottom: 50px;
+    padding-bottom: 58px;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 68px;
+    padding-bottom: 79px;
   }
 }
 
@@ -22,7 +22,7 @@
 
   @media (min-width: $tablet) {
     padding-top: 45px;
-    padding-bottom: 151px;
+    padding-bottom: 72px;
 
     font-size: 60px;
     line-height: 60px;
@@ -30,7 +30,7 @@
 
   @media (min-width: $desktop) {
     padding-top: 71px;
-    padding-bottom: 72px;
+    padding-bottom: 0;
   }
 }
 
@@ -49,12 +49,13 @@
     counter-reset: number 0;
 
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 150px;
+    row-gap: 89px;
   }
 
   @media (min-width: $desktop) {
-    column-gap: 75px;
     margin-top: 75px;
+
+    column-gap: 75px;
 
     grid-template-columns: repeat(4, 1fr);
   }
@@ -72,8 +73,7 @@
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    width: 250px;
-    padding-bottom: 57px;
+    padding: 112px 60px 44px 0;
 
     counter-increment: number;
 
@@ -81,14 +81,24 @@
     &::after {
       content: counter(number);
       position: absolute;
-      right: 0;
-      bottom: 0;
+      top: -40px;
+      left: 55%;
       z-index: -1;
 
       font-size: 280px;
       line-height: 280px;
       font-family: $font-family--second;
       color: $color-white-smoke;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 0;
+
+    &::after {
+      left: 72%;
     }
   }
 }
@@ -99,13 +109,12 @@
   margin: 0;
   padding: 0;
   padding-left: 80px;
-  padding-top: 2px;
+
   font-family: $font-family--main;
   text-align: left;
 
   @media (min-width: $tablet) {
     padding: 0;
-    padding-top: 33px;
 
     font-size: 16px;
     line-height: 24px;
@@ -126,7 +135,6 @@
     background-image: url("../img/background/instructions-sheet.png");
 
     @media (min-width: $tablet) {
-      top: -70px;
       width: 80px;
       height: 80px;
 
@@ -148,7 +156,6 @@
     background-image: url("../img/background/instructions-powder.png");
 
     @media (min-width: $tablet) {
-      top: -70px;
       width: 80px;
       height: 80px;
 
@@ -170,7 +177,6 @@
     background-image: url("../img/background/instructions-cutlery.png");
 
     @media (min-width: $tablet) {
-      top: -70px;
       width: 80px;
       height: 80px;
 
@@ -192,7 +198,6 @@
     background-image: url("../img/background/instructions-clock.png");
 
     @media (min-width: $tablet) {
-      top: -70px;
       width: 80px;
       height: 80px;
 

@@ -241,7 +241,7 @@
     @media (min-width: $desktop) {
       margin-bottom: 67px;
 
-      grid-gap: 120px;
+      grid-column-gap: 120px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
@@ -450,7 +450,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 50%;
+      top: 0;
       left: -45px;
 
       box-sizing: border-box;
@@ -458,7 +458,6 @@
       height: 30px;
 
       border: 1px solid $color-very-light-grey;
-      transform: translateY(-50%);
 
       @media (min-width: $tablet) {
         width: 40px;
