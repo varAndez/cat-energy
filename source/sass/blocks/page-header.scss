@@ -1,4 +1,4 @@
-.page-header__container {
+.page-header {
   @media (min-width: $desktop) {
     max-width: 1440px;
     margin: 0 auto;
@@ -7,30 +7,40 @@
   }
 }
 
-.page-header__container--index {
+.page-header--index {
   position: relative;
 
   @media (min-width: $desktop) {
+    height: 693px;
+
     background-image: url("../img/background/background-desktop.png");
     background-repeat: no-repeat;
     background-position: 100% 0;
-    height: 693px;
 
     &::before {
       content: "";
       position: absolute;
-      left: 50%;
       top: 0;
-      background-color: $color-apple;
+      left: 50%;
+      z-index: -1;
+
       width: 50vw;
       height: 100%;
-      z-index: -1;
+
+      background-color: $color-apple;
     }
   }
 }
 
+.page-header__wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+}
 
-.page-header {
+.page-header__main {
   padding: 0;
   padding-top: 13px;
 
@@ -46,18 +56,10 @@
 
     @media (min-width: $desktop) {
       padding-top: 52px;
+      padding-right: 0;
       padding-bottom: 0;
       padding-left: 0;
-      padding-right: 0;
     }
-  }
-}
-
-.page-header__wrapper {
-  @media (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    padding: 0;
   }
 }
 
