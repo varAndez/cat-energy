@@ -1,4 +1,5 @@
 const gulp = require("gulp");
+const ghPages = require('gulp-gh-pages');
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
@@ -154,6 +155,13 @@ const build = gulp.series(
   createWebp,
   html
 );
+
+// Deploy
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
 
 exports.build = build;
 
